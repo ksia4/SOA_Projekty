@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+   <title>#{NapisyBean.getActualTitle()}</title>
+</h:head>
+<h:body>
+
+   <h1>#{NapisyBean.getActualH1()}</h1>
+   <p> Co chcesz zrobić?</p>
+   <h:form>
+      <h:commandButton value="Wyświetl książki" action="#{NapisyBean.setToKatalog}"></h:commandButton>
+      <h:commandButton value="Dodaj ksiżąkę" action="#{NapisyBean.setToDodajKsiazke}"></h:commandButton>
+   </h:form>
+   <!--
+   <h1> Spis książek</h1>
+
+
+   <h:dataTable value="#{AddBooks.bookList}" var="emp" border="1">
+      <h:column>
+         <f:facet name="header">
+            <h:outputText value="Imie Autora"/>
+         </f:facet>
+         <h:outputText value="#{emp.imie}"/>
+      </h:column>
+      <h:column>
+         <f:facet name="header">
+            <h:outputText value="Nazwisko Autora"/>
+         </f:facet>
+         <h:outputText value="#{emp.nazwisko}"/>
+      </h:column>
+      <h:column>
+         <f:facet name="header">
+            <h:outputText value="Tytul ksiazki"/>
+         </f:facet>
+         <h:outputText value="#{emp.tytul}"/>
+      </h:column>
+      <h:column>
+         <f:facet name="header">
+            <h:outputText value="ISBN"/>
+         </f:facet>
+         <h:outputText value="#{emp.isbn}"/>
+      </h:column>
+      <h:column>
+         <f:facet name="header">
+            <h:outputText value="Rok Wydania"/>
+         </f:facet>
+         <h:outputText value="#{emp.rokWydania}"/>
+      </h:column>
+      <h:column>
+         <f:facet name="header">
+            <h:outputText value="Cena"/>
+         </f:facet>
+         <h:outputText value="#{emp.cena}"/>
+      </h:column>
+   </h:dataTable>
+   -->
+
+</h:body>
+</html>
