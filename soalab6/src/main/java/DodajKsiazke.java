@@ -8,7 +8,7 @@ import java.util.List;
 @ManagedBean(name = "DodajKsiazke")
 @RequestScoped
 public class DodajKsiazke {
-    private Ksiazka ksiazka;
+    static private Ksiazka ksiazka;
     static private List<Ksiazka> ksiazkaList = new ArrayList<Ksiazka>();
     static private List<Ksiazka> filtrowanaksiazkaList = new ArrayList<Ksiazka>();
     private List<Autor> autorList = new ArrayList<Autor>();

@@ -106,6 +106,7 @@ public class Wyszukiwarka {
     public void usun(Ksiazka k){
         Query q = em.createQuery("delete Ksiazka ks where ks.id = :idK");
         q.setParameter("idK", k.getKsiazkaId());
+        System.out.println("id = " + k.getKsiazkaId());
         em.getTransaction().begin();
         int result = q.executeUpdate();
         em.getTransaction().commit();
@@ -113,12 +114,13 @@ public class Wyszukiwarka {
     }
 
     public void update(Ksiazka k){
-        Query q = em.createQuery("update Ksiazka set tytul = :ksT, autor = :ksA  where ksiazkaId = :ksID");
+        Query q = em.createQuery("update Ksiazka set tytul = :ksT where ksiazkaId = :ksID");
         System.out.println("update za 3... 2.. 1..");
         q.setParameter("ksT", k.getTytul());
         System.out.println("tytul" + k.getTytul().toString());
-        q.setParameter("ksA", k.getAutor());
+        //q.setParameter("ksA", k.getAutor());
         q.setParameter("ksID", k.getKsiazkaId());
+        System.out.println("id = "+ k.getKsiazkaId());
         em.getTransaction().begin();
         q.executeUpdate();
         em.getTransaction().commit();

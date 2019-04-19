@@ -12,9 +12,9 @@
     <h1>Strona Logowania</h1>
     <h:form>
         <h:outputLabel> Podaj swoje dane </h:outputLabel> <br/>
-        Imie: <h:inputText value="#{DodajKsiazke.autor.imie}"/>
-        Nazwisko: <h:inputText value="#{DodajKsiazke.autor.nazwisko}"/> <br/>
-        <h:commandButton value="Dodaj" action="#{DodajKsiazke.Dodaj}"></h:commandButton>
+        Imie: <h:inputText value="#{CzytelnikBean.czytelnik.imie}"/>
+        Nazwisko: <h:inputText value="#{CzytelnikBean.czytelnik.nazwisko}"/> <br/>
+        <h:commandButton value="Loguj" action="#{CzytelnikBean.loguj}"></h:commandButton>
     </h:form>
 
 </h:body>

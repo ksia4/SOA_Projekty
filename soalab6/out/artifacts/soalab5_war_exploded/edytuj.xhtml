@@ -11,11 +11,13 @@
 <h:body>
     <h1>Edytuj książkę</h1>
 <h:form>
-    <h:outputLabel> Nowe dane książki: </h:outputLabel> <br/>
+    <h:outputLabel> Nowe dane książki:</h:outputLabel> <br/>
     Imie Autora: <h:inputText value="#{DodajKsiazke.autor.imie}"/>
     Nazwisko Autora: <h:inputText value="#{DodajKsiazke.autor.nazwisko}"/>
     <br/>
     Tytul: <h:inputText value="#{DodajKsiazke.ksiazka.tytul}"/> <br/>
+    ID: <h:inputText value="#{DodajKsiazke.ksiazka.ksiazkaId}"/><br/>
+
 
     <h:commandButton value="Dodaj" action="#{DodajKsiazke.Update}"></h:commandButton>
 </h:form>
