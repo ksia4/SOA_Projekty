@@ -4,6 +4,7 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaBuilder;
 import java.awt.*;
+import java.util.Date;
 import java.util.List;
 
 public class CzytelnikDAO {
@@ -53,5 +54,21 @@ public class CzytelnikDAO {
             System.err.println("Błąd przy pobieraniu czytelnika");
         }
         return -1;
+    }
+
+    public void Wypozycz(Czytelnik czytelnik, Ksiazka ksiazka){
+        System.out.println("Czytelnik: " + czytelnik.getImie() + " o ID = " + czytelnik.getCzytelnikId());
+        System.out.println("Książka: " + ksiazka.getTytul() + " o ID = " + ksiazka.getKsiazkaId());
+        Wypozyczenia wypozyczenia = new Wypozyczenia(ksiazka, czytelnik, new Date());
+        Wyszukiwarka.zmienStan(ksiazka.getKsiazkaId(), ksiazka.getCzyDostepna());
+        System.out.println("status ksiązki: " + ksiazka.getCzyDostepna().toString());
+        try{
+            em.getTransaction().begin();
+            em.persist(wypozyczenia);
+            em.getTransaction().commit();
+        }
+        catch (Exception e){
+            System.err.println("Błąd przy wypozyczaniu: " + e);
+        }
     }
 }

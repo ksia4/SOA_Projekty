@@ -71,6 +71,7 @@ public class NapisyBean {
         setActualButton("Zobacz pełen spis książek");
         FilterBean.FilterTylkoDostepne();
         System.out.println(getActualH1());
+        System.out.println("Filtrowanie ksiazek dostepnych");
         return "wypozycz";
     }
 
@@ -92,6 +93,11 @@ public class NapisyBean {
             zmiana = true;
             return setToKatalog();
         }
+    }
+
+    public static String setTowypozyczenia(){
+
+        return "wypozyczenia";
     }
 
 

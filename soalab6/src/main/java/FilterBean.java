@@ -12,12 +12,15 @@ public class FilterBean {
     public FilterBean(){}
 
     public static void FilterTylkoDostepne(){
+        System.out.println("Filtrowanie ksiazek dostepnych");
         List<Ksiazka> tmp = new ArrayList<Ksiazka>();
         System.out.println(DodajKsiazke.getKsiazkaList().size());
         for(Ksiazka k : DodajKsiazke.getKsiazkaList()){
             if(k.getCzyDostepna()) {
                 tmp.add(k);
+                System.out.println("Filtrowanie ksiazek dostepnych");
                 System.out.println(k.getCzyDostepna().toString());
+                System.out.println(k.getTytul());
             }
         }
         DodajKsiazke.setFiltrowanaksiazkaList(tmp);

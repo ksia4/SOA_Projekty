@@ -14,12 +14,13 @@ import org.hibernate.Session;
 
 public class Wyszukiwarka {
     private List<Ksiazka> ksiazkaList = new ArrayList<Ksiazka>();
+    private List<Ksiazka> actualksiazkaList = new ArrayList<Ksiazka>();
     private List<Autor> autorList = new ArrayList<Autor>();
     private List<String> autorPrintableList = new ArrayList<String>();
     private Map<String, Autor> autorMap;
 
-    private EntityManagerFactory factory;
-    private EntityManager em;
+    private static EntityManagerFactory factory;
+    private static EntityManager em;
 
     public Wyszukiwarka(){
         factory = Persistence.createEntityManagerFactory("soalab");
@@ -125,5 +126,34 @@ public class Wyszukiwarka {
         q.executeUpdate();
         em.getTransaction().commit();
         //System.out.println("Aktualizacja ksiazki o id" + k.getKsiazkaId().toString() + "Nowy tytul to: " + k.getTytul());
+    }
+
+    public static void zmienStan(Integer ID, Boolean stan){
+        Query q;
+        if(stan){
+            q = em.createQuery("update Ksiazka set czyDostepna = false where ksiazkaId = :ksID");
+        }
+        else{
+            q = em.createQuery("update Ksiazka set czyDostepna = true where ksiazkaId = :ksID");
+        }
+        q.setParameter("ksID", ID);
+        em.getTransaction().begin();
+        q.executeUpdate();
+        em.getTransaction().commit();
+    }
+
+    public void setActualksiazkaList(List<Ksiazka> actualksiazkaList) {
+        this.actualksiazkaList = actualksiazkaList;
+    }
+
+    public List<Ksiazka> getActualksiazkaList() {
+        try {
+            Query q = em.createQuery("from Ksiazka where czyDostepna = true ");
+            actualksiazkaList = q.getResultList();
+        }
+        catch (Exception e){
+            System.err.println("Błąd pobierania rekordow: " + e);
+        }
+        return actualksiazkaList;
     }
 }

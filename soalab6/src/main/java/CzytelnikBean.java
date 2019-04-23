@@ -5,13 +5,13 @@ import javax.faces.bean.ManagedBean;
 @RequestScoped
 public class CzytelnikBean {
 
-    private Czytelnik czytelnik = new Czytelnik();
+    private static Czytelnik czytelnik = new Czytelnik();
     private CzytelnikDAO czytelnikDAO = new CzytelnikDAO();
 
     public CzytelnikBean(){}
 
-    public void setCzytelnik(Czytelnik czytelnik) {
-        this.czytelnik = czytelnik;
+    public void setCzytelnik(Czytelnik cz) {
+        czytelnik = cz;
     }
 
     public Czytelnik getCzytelnik() {
@@ -20,7 +20,13 @@ public class CzytelnikBean {
 
     public String loguj(){
 
-        czytelnikDAO.DodajCzytelnika(this.czytelnik);
+        czytelnikDAO.DodajCzytelnika(czytelnik);
+        return NapisyBean.setToWypozycz();
+    }
+
+    public String wypozycz(Ksiazka ksiazka){
+        System.out.println("Czytelnik: " + czytelnik.getImie() + " o ID = " + czytelnik.getCzytelnikId());
+        czytelnikDAO.Wypozycz(czytelnik, ksiazka);
         return "wypozycz";
     }
 }

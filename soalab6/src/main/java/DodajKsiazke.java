@@ -86,8 +86,9 @@ public class DodajKsiazke {
         DodajKsiazke.filtrowanaksiazkaList = filtrowanaksiazkaList;
     }
 
-    public static List<Ksiazka> getFiltrowanaksiazkaList() {
-        return filtrowanaksiazkaList;
+    public List<Ksiazka> getFiltrowanaksiazkaList() {
+
+        return wyszukiwarka.getActualksiazkaList();
     }
 
     public String deleteKsiazke(Ksiazka k){

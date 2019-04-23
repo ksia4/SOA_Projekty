@@ -10,6 +10,7 @@
 </h:head>
 <h:body>
     <h1>#{NapisyBean.getActualH1()}</h1>
+    <h:form>
     <h:dataTable value="#{DodajKsiazke.getFiltrowanaksiazkaList()}" var="emp" border="1">
         <h:column>
             <f:facet name="header">
@@ -29,7 +30,17 @@
             </f:facet>
             <h:outputText value="#{emp.autor.nazwisko}"/>
         </h:column>
+        <h:column>
+            <f:facet name="header">Wypożycz</f:facet>
+            <h:commandButton value="Wypożycz" action="#{CzytelnikBean.wypozycz(emp)}"></h:commandButton>
+        </h:column>
     </h:dataTable>
+    </h:form>
+
+    <h:form>
+        <h:commandButton value="Wróć do strony głównej" action="#{NapisyBean.setToIndex}"></h:commandButton>
+        <h:commandButton value="Aktualnie wypożyczone książki" action="#{NapisyBean.setTowypozyczenia}"></h:commandButton>
+    </h:form>
 
 </h:body>
 </html>

@@ -11,7 +11,7 @@
 <h:body>
     <h1>#{NapisyBean.getActualH1()}</h1>
     <h:form>
-    <h:dataTable id="tabela" value="#{DodajKsiazke.getFiltrowanaksiazkaList()}" var="emp" border="1">
+    <h:dataTable id="tabela" value="#{DodajKsiazke.getKsiazkaList()}" var="emp" border="1">
         <h:column>
             <f:facet name="header">
                 <h:outputText value="Tytul"/>
