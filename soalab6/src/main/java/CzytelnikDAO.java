@@ -4,6 +4,7 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaBuilder;
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -57,11 +58,8 @@ public class CzytelnikDAO {
     }
 
     public void Wypozycz(Czytelnik czytelnik, Ksiazka ksiazka){
-        System.out.println("Czytelnik: " + czytelnik.getImie() + " o ID = " + czytelnik.getCzytelnikId());
-        System.out.println("Książka: " + ksiazka.getTytul() + " o ID = " + ksiazka.getKsiazkaId());
         Wypozyczenia wypozyczenia = new Wypozyczenia(ksiazka, czytelnik, new Date());
         Wyszukiwarka.zmienStan(ksiazka.getKsiazkaId(), ksiazka.getCzyDostepna());
-        System.out.println("status ksiązki: " + ksiazka.getCzyDostepna().toString());
         try{
             em.getTransaction().begin();
             em.persist(wypozyczenia);
@@ -70,5 +68,36 @@ public class CzytelnikDAO {
         catch (Exception e){
             System.err.println("Błąd przy wypozyczaniu: " + e);
         }
+    }
+
+    public void Oddaj(Wypozyczenia w){
+        Wyszukiwarka.zmienStan(w.getKsiazka().getKsiazkaId(), w.getKsiazka().getCzyDostepna());
+        try{
+            em.getTransaction().begin();
+            Query q = em.createQuery("update Wypozyczenia set dataZwrotu = :datazwrot where wypozyczeniaID = :ID");
+            q.setParameter("datazwrot", new Date());
+            q.setParameter("ID", w.getWypozyczeniaID());
+            q.executeUpdate();
+            em.getTransaction().commit();
+        }
+        catch (Exception e){
+            System.err.println("Błąd przy wypozyczaniu: " + e);
+        }
+    }
+
+    public List<Wypozyczenia> ListaWypozyczonych(Czytelnik cz){
+        List<Wypozyczenia> list = new ArrayList<Wypozyczenia>();
+        try {
+            em.getTransaction().begin();
+            Query q = em.createQuery("from Wypozyczenia where czytelnik.czytelnikId = :czID");
+            q.setParameter("czID", cz.getCzytelnikId());
+            list = q.getResultList();
+            em.getTransaction().commit();
+        }
+        catch (Exception e){
+            System.err.println("Błąd przy pobieraniu wypozyczen");
+        }
+
+        return list;
     }
 }

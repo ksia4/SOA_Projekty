@@ -88,5 +88,12 @@ public class Wypozyczenia {
     public void setDataZwrotu(Date dataZwrotu) {
         this.dataZwrotu = dataZwrotu;
     }
+
+    public Boolean czyOddana(){
+        if (this.dataZwrotu == null){
+            return false;
+        }
+        return true;
+    }
 }
 

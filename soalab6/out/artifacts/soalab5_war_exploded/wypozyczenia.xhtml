@@ -11,5 +11,44 @@
 <h:body>
     <h1>#{CzytelnikBean.czytelnik.nazwisko}</h1>
 
+    <h:form>
+        <h:dataTable value="#{CzytelnikBean.wypozyczeniaList}" var="emp" border="1">
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Tytul"/>
+                </f:facet>
+                <h:outputText value="#{emp.ksiazka.tytul}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Imie Autora"/>
+                </f:facet>
+                <h:outputText value="#{emp.ksiazka.autor.imie}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Nazwisko Autora"/>
+                </f:facet>
+                <h:outputText value="#{emp.ksiazka.autor.nazwisko}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Data wypozyczenia"/>
+                </f:facet>
+                <h:outputText value="#{emp.dataWypozyczenia}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Data zwrotu"/>
+                </f:facet>
+                <h:outputText value="#{emp.dataZwrotu}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Oddaj</f:facet>
+                <h:commandButton value="Oddaj" action="#{CzytelnikBean.oddaj(emp)}" rendered="#{!(emp.czyOddana())}"></h:commandButton>
+            </h:column>
+        </h:dataTable>
+    </h:form>
+
 </h:body>
 </html>
