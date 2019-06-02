@@ -10,7 +10,7 @@ import java.util.Map;
 
 import org.hibernate.Session;
 
-
+// IT SHOULD BE DELETED, UNUSED CLASS
 
 public class Wyszukiwarka {
     private List<Ksiazka> ksiazkaList = new ArrayList<Ksiazka>();

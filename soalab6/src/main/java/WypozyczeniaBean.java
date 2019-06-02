@@ -1,7 +1,7 @@
 import javax.enterprise.context.RequestScoped;
 import javax.faces.bean.ManagedBean;
 import java.util.List;
-
+// IT SHOULD BE DELETED, UNUSED CLASS
 @ManagedBean(name = "WypozyczeniaBean")
 @RequestScoped
 public class WypozyczeniaBean {

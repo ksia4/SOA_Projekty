@@ -1,7 +1,7 @@
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
-
+// IT SHOULD BE DELETED, UNUSED CLASS
 @Entity
 @Table(name = "ksiazka")
 public class Ksiazka {

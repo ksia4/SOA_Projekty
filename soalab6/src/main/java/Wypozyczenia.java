@@ -1,6 +1,6 @@
 import javax.persistence.*;
 import java.util.Date;
-
+// IT SHOULD BE DELETED, UNUSED CLASS
 @Entity
 @Table(name = "wypozyczenia")
 public class Wypozyczenia {

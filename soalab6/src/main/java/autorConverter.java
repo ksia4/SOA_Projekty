@@ -1,7 +1,7 @@
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
-
+// IT SHOULD BE DELETED, UNUSED CLASS
 public class autorConverter implements Converter {
     private static Wyszukiwarka wyszukiwarka = new Wyszukiwarka();
 

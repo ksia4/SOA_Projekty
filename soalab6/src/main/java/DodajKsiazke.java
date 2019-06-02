@@ -4,7 +4,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.model.SelectItem;
 import java.util.ArrayList;
 import java.util.List;
-
+// IT SHOULD BE DELETED, UNUSED CLASS
 @ManagedBean(name = "DodajKsiazke")
 @RequestScoped
 public class DodajKsiazke {

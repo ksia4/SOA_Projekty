@@ -7,7 +7,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
+// IT SHOULD BE DELETED, UNUSED CLASS
 public class CzytelnikDAO {
 
     private EntityManagerFactory factory;
