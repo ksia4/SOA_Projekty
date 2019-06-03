@@ -2,37 +2,71 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="soalab5:war exploded" />
+      <artifact name="soalab5:war" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f23a9e7-d280-44e3-bee6-21adfc4fabab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/soalab5_war_exploded.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c76032cb-6470-45b9-8133-2992c4500600.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c76032cb-6470-45b9-8133-2992c4500600.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c76032cb-6470-45b9-8133-2992c4500600/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c76032cb-6470-45b9-8133-2992c4500600/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/Autor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/Autor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/Czytelnik.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/Czytelnik.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/CzytelnikBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/CzytelnikBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/CzytelnikDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/CzytelnikDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/DodajKsiazke.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/DodajKsiazke.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/FilterBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/FilterBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/Ksiazka.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/Ksiazka.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/NapisyBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/NapisyBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/Wypozyczenia.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/Wypozyczenia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/WypozyczeniaBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/WypozyczeniaBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/Wyszukiwarka.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/Wyszukiwarka.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/autorConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/autorConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/dao/AbstractDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/dao/AbstractDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/dao/EmployeeDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/dao/EmployeeDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/dao/ParkingDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/dao/ParkingDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/dao/ParkingSpaceDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/dao/ParkingSpaceDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/enums/EmployeeRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/enums/EmployeeRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/enums/ParkingSpaceState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/enums/ParkingSpaceState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/initialization/AddEmployeeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/initialization/AddEmployeeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/parking/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/parking/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/parking/Parking.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/parking/Parking.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/parking/ParkingSpace.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/parking/ParkingSpace.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/webservice/parking/ParkingSpaceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/webservice/parking/ParkingSpaceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/webservice/parking/ParkingSpaceServicePublisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/webservice/parking/ParkingSpaceServicePublisher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soalab5.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Autor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Autor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Czytelnik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Czytelnik.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CzytelnikBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CzytelnikBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CzytelnikDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CzytelnikDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DodajKsiazke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DodajKsiazke.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FilterBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FilterBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Ksiazka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Ksiazka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NapisyBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NapisyBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Wypozyczenia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Wypozyczenia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WypozyczeniaBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WypozyczeniaBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Wyszukiwarka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Wyszukiwarka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/autorConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/autorConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soalab5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/soalab5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/AbstractDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/EmployeeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ParkingDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ParkingDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ParkingSpaceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ParkingSpaceDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceServicePublisher.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Autor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Autor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Czytelnik.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Czytelnik.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CzytelnikBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CzytelnikBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CzytelnikDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CzytelnikDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DodajKsiazke.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DodajKsiazke.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FilterBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FilterBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Ksiazka.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Ksiazka.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/NapisyBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NapisyBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Wypozyczenia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Wypozyczenia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WypozyczeniaBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WypozyczeniaBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Wyszukiwarka.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Wyszukiwarka.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/autorConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/autorConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/AbstractDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/AbstractDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/EmployeeDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/EmployeeDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/ParkingDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/ParkingDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/ParkingSpaceDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/ParkingSpaceDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/enums/EmployeeRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/enums/EmployeeRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/enums/ParkingSpaceState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/enums/ParkingSpaceState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/initialization/AddEmployeeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/initialization/AddEmployeeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parking/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parking/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parking/Parking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parking/Parking.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parking/ParkingSpace.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parking/ParkingSpace.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webservice/parking/ParkingSpaceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webservice/parking/ParkingSpaceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webservice/parking/ParkingSpaceServicePublisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webservice/parking/ParkingSpaceServicePublisher.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -113,49 +147,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/ParkingSpaceDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://c76032cb-6470-45b9-8133-2992c4500600/database/postgres/schema/public/table/employees">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="64" lean-forward="true" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#271#272#0" expanded="true" />
-                <element signature="e#328#329#0" expanded="true" />
-                <element signature="e#473#474#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceServicePublisher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://c76032cb-6470-45b9-8133-2992c4500600/database/postgres/schema/public/table/ksiazka">
+        <entry file="das://c76032cb-6470-45b9-8133-2992c4500600/database/postgres/schema/public/table/parking_spaces">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -173,38 +165,93 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/faces-config.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceServicePublisher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+            <state relative-caret-position="108">
+              <caret line="6" column="67" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="67" />
             </state>
           </provider>
-          <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/ParkingSpaceDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="20" column="74" lean-forward="true" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#214#215#0" expanded="true" />
+                <element signature="e#267#268#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Wyszukiwarka.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="124" selection-start-line="124" selection-end-line="126" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/webservice/client/ParkingSpaceServiceClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/initialization/AddEmployeeTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/EmployeeDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/index.xhtml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/AbstractDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="68" selection-start-line="68" selection-end-line="88" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            <state relative-caret-position="289">
+              <caret line="19" selection-start-line="19" selection-end-line="21" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -234,22 +281,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c76032cb-6470-45b9-8133-2992c4500600/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/Student.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/BookEJB.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AddBooks.java" />
-        <option value="$PROJECT_DIR$/src/main/java/converter/autorConverter.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/faces-config.xml" />
-        <option value="$PROJECT_DIR$/web/dodaj.xhtml" />
-        <option value="$PROJECT_DIR$/web/index.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/web/logowanie.xhtml" />
-        <option value="$PROJECT_DIR$/web/edytuj.xhtml" />
         <option value="$PROJECT_DIR$/web/wypozycz.xhtml" />
         <option value="$PROJECT_DIR$/web/katalog.xhtml" />
         <option value="$PROJECT_DIR$/web/wypozyczenia.xhtml" />
@@ -258,7 +289,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Czytelnik.java" />
         <option value="$PROJECT_DIR$/src/main/java/CzytelnikBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/CzytelnikDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DodajKsiazke.java" />
         <option value="$PROJECT_DIR$/src/main/java/FilterBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/Ksiazka.java" />
         <option value="$PROJECT_DIR$/src/main/java/NapisyBean.java" />
@@ -268,13 +298,9 @@
         <option value="$PROJECT_DIR$/src/main/java/enums/ParkingSpaceState.java" />
         <option value="$PROJECT_DIR$/src/main/java/enums/EmployeeRole.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/Dao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/EmployeeDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/ParkingSpaceDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/parking/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/java/parking/Parking.java" />
         <option value="$PROJECT_DIR$/src/main/java/parking/ParkingSpace.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/ParkingDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/AbstractDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/agh/kis/soa/parkingwebservice/ParkingSpace.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/agh/kis/soa/parkingwebservice/ParkingSpaceServicePublisher.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/agh/kis/soa/parkingwebservice/Publis.java" />
@@ -283,8 +309,29 @@
         <option value="$PROJECT_DIR$/src/main/java/initialization/AddEmployeeTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/client/parking/ParkingSpaceServiceClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/client/ParkingSpaceServiceClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceServiceImplService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceServiceInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceServiceService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceServiceClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceServicePublisher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservice/client/DoSomethingResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservice/client/ObjectFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservice/client/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservice/client/ParkingSpaceService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservice/client/ParkingSpaceServiceImplService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservice/client/DoSomethingBuba.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservice/client/DoSomething.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DodajKsiazke.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jboss-web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/ParkingDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/AbstractDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/EmployeeDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservice/client/ParkingSpaceServiceClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/ParkingSpaceDao.java" />
       </list>
     </option>
   </component>
@@ -305,10 +352,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="992" />
-    <option name="y" value="24" />
+    <option name="x" value="2358" />
+    <option name="y" value="-4" />
     <option name="width" value="928" />
-    <option name="height" value="1056" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -319,7 +366,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -364,14 +410,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="soalab6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soalab6" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="initialization" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -388,27 +426,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="webservice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="soalab6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="soalab6" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="webservice" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="soalab6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="soalab6" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="webservice" type="462c0819:PsiDirectoryNode" />
               <item name="parking" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="soalab6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soalab6" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="soalab6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soalab6" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="soalab6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soalab6" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="soalab6" type="b2602c69:ProjectViewProjectNode" />
@@ -421,10 +457,15 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="soalab6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -432,7 +473,7 @@
     <property name="DefaultHtmlFileTemplate" value="XHTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559499384491" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559591388235" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -441,20 +482,23 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.24712643" />
-    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/webservice/parking" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/web/WEB-INF" />
       <recent name="$PROJECT_DIR$/lib" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/WEB-INF" />
-      <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -469,7 +513,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JBoss Server.JBoss 8.0.0.Finalnowy">
+  <component name="RunManager" selected="Application.ParkingSpaceServiceClient (1)">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -498,10 +542,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main2" />
+    <configuration name="ParkingSpaceServiceClient (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="webservice.client.ParkingSpaceServiceClient" />
       <module name="soalab5" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webservice.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkingSpaceServiceClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="webservice.parking.ParkingSpaceServiceClient" />
+      <module name="soalab5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webservice.parking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkingSpaceServiceClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="webservice.client.ParkingSpaceServiceClient" />
+      <module name="soalab5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webservice.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -527,10 +605,11 @@
       </method>
     </configuration>
     <configuration name="JBoss 8.0.0.Finalnowy" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 8.0.0.Finalnowy" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/soalab5_war_exploded/index.xhtml" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.xhtml" />
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
       <deployment>
-        <artifact name="soalab5:war exploded">
+        <artifact name="soalab5:war">
           <settings />
         </artifact>
       </deployment>
@@ -594,7 +673,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="soalab5:war exploded" />
+          <artifact name="soalab5:war" />
         </option>
       </method>
     </configuration>
@@ -623,12 +702,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.AddEmployeeTest" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.ParkingSpaceServiceClient" />
+      <item itemvalue="Application.ParkingSpaceServiceClient (1)" />
+      <item itemvalue="Application.ParkingSpaceServicePublisher" />
+      <item itemvalue="JBoss Server.JBoss 8.0.0.Finalnowy" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ParkingSpaceServiceClient (1)" />
         <item itemvalue="Application.AddEmployeeTest" />
         <item itemvalue="Application.ParkingSpaceServicePublisher" />
+        <item itemvalue="Application.ParkingSpaceServiceClient" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main2" />
       </list>
     </recent_temporary>
   </component>
@@ -660,12 +748,17 @@
       <workItem from="1556025282021" duration="2982000" />
       <workItem from="1559466570398" duration="10440000" />
       <workItem from="1559480685516" duration="3310000" />
-      <workItem from="1559485699214" duration="9355000" />
+      <workItem from="1559485699214" duration="11067000" />
+      <workItem from="1559504312112" duration="2982000" />
+      <workItem from="1559508801646" duration="6253000" />
+      <workItem from="1559542335261" duration="3776000" />
+      <workItem from="1559546481652" duration="473000" />
+      <workItem from="1559579911344" duration="7577000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112466000" />
+    <option name="totallyTimeSpent" value="135239000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -677,12 +770,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1430" y="-11" width="1857" height="1092" extended-state="6" />
+    <frame x="1431" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
       <window_info id="Persistence" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.15002757" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18587975" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
@@ -691,22 +784,22 @@
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="ANTLR Preview" order="0" />
       <window_info anchor="bottom" id="Tool Output" order="1" />
-      <window_info anchor="bottom" id="Database Console" order="2" weight="0.32991013" />
-      <window_info anchor="bottom" id="Java Enterprise" order="3" weight="0.32846716" />
+      <window_info anchor="bottom" id="Database Console" order="2" weight="0.32953367" />
+      <window_info anchor="bottom" id="Java Enterprise" order="3" weight="0.32746115" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Messages" order="5" weight="0.59585494" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32953367" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.3564767" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="5" weight="0.37720206" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32930514" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.3015544" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.39879155" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.3295099" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="15" weight="0.3295099" />
+      <window_info anchor="bottom" id="Terminal" order="15" weight="0.16767372" />
       <window_info anchor="bottom" id="Event Log" order="16" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="17" weight="0.3274244" />
+      <window_info anchor="bottom" id="Application Servers" order="17" weight="0.326284" />
       <window_info anchor="right" id="JSF" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Maven" order="2" weight="0.1128274" />
@@ -716,7 +809,7 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Database" order="9" visible="true" weight="0.17153889" />
+      <window_info anchor="right" id="Database" order="9" visible="true" weight="0.16767788" />
       <window_info anchor="right" id="CDI" order="10" />
       <window_info anchor="right" id="Bean Validation" order="11" />
     </layout>
@@ -725,51 +818,198 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Book.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-    <entry file="file://$PROJECT_DIR$/web/edytuj.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceState.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/parking/package-info.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceServiceInterface.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceServiceImplService.java" />
+    <entry file="file://$PROJECT_DIR$/src/webservice/parking/ParkingSpaceService.class" />
+    <entry file="file://$PROJECT_DIR$/src/webservice/parking/ParkingSpaceServiceInterface.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceServiceService.java" />
+    <entry file="file://$PROJECT_DIR$/src/webservice/parking/ParkingSpaceServiceService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/parking/ObjectFactory.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceServiceClient.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/client/package-info.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/client/ParkingSpaceService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/client/ParkingSpaceServiceImplService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/client/ParkingSpaceServiceImplService.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/client/DoSomething.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/client/ParkingSpaceService.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/client/DoSomethingResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/client/DoSomething.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/client/ObjectFactory.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/parking/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        <state relative-caret-position="108">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/logowanie.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/CzytelnikDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+        <state relative-caret-position="1170">
+          <caret line="88" selection-start-line="88" selection-end-line="101" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/wypozycz.xhtml">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+        <state>
+          <caret selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jboss-web.xml">
+      <provider editor-type-id="com.intellij.javaee.oss.jboss.editor.JBossWebRootProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/parking/ParkingSpace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/katalog.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+        <state relative-caret-position="180">
+          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/wypozyczenia.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Autor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="37" column="63" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
+        <state relative-caret-position="-396">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/autorConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Czytelnik.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-93">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CzytelnikBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-129">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FilterBean.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/WypozyczeniaBean.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ParkingDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c76032cb-6470-45b9-8133-2992c4500600/database/postgres/schema/public/table/books">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c76032cb-6470-45b9-8133-2992c4500600/database/postgres/schema/public/table/employees">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c76032cb-6470-45b9-8133-2992c4500600/database/postgres/schema/public/table/ksiazka">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/edytuj.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="60" lean-forward="true" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DodajKsiazke.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="107" column="25" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
+          <folding>
+            <element signature="e#2256#2257#0" expanded="true" />
+            <element signature="e#2290#2291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Ksiazka.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceServicePublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="67" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c76032cb-6470-45b9-8133-2992c4500600/database/postgres/schema/public/table/czytelnik">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c76032cb-6470-45b9-8133-2992c4500600/database/postgres/schema/public/table/authors">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -780,138 +1020,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/enums/ParkingSpaceState.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Autor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="30" selection-start-line="30" selection-end-line="32" selection-end-column="63" />
+        <state relative-caret-position="342">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Wypozyczenia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1656#1657#0" expanded="true" />
-            <element signature="e#1693#1694#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WypozyczeniaBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Wyszukiwarka.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/autorConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CzytelnikBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/Persistence.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/enums/EmployeeRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DodajKsiazke.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Ksiazka.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="35" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CzytelnikDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/IDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Czytelnik.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/parking/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1362#1363#0" expanded="true" />
-            <element signature="e#1402#1403#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -923,94 +1037,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NapisyBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dodaj.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/agh/kis/soa/parkingwebservice/ParkingSpaceServicePublisher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/agh/kis/soa/parkingwebservice/ParkingSpaceServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/agh/kis/soa/parkingwebservice/Publis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/agh/kis/soa/parkingwebservice/ParkingSpace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding>
-            <element signature="e#115#116#0" expanded="true" />
-            <element signature="e#140#141#0" expanded="true" />
-            <element signature="e#173#174#0" expanded="true" />
-            <element signature="e#201#202#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/agh/kis/soa/parkingwebservice/ParkingSpaceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/parking/Parking.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Wyszukiwarka.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#466#480#0" expanded="true" />
-          </folding>
+          <caret line="124" selection-start-line="124" selection-end-line="126" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/parking/ParkingSpace.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/client/ParkingSpaceServiceClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/AbstractDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="198">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1027,116 +1064,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://c76032cb-6470-45b9-8133-2992c4500600/database/postgres/schema/public/table/parkings">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/EmployeeDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="252">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ParkingDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="68" selection-start-line="68" selection-end-line="88" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/ParkingSpaceDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/faces-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
-    </entry>
-    <entry file="das://c76032cb-6470-45b9-8133-2992c4500600/database/postgres/schema/public/table/czytelnik">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://c76032cb-6470-45b9-8133-2992c4500600/database/postgres/schema/public/table/ksiazka">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://c76032cb-6470-45b9-8133-2992c4500600/database/postgres/schema/public/table/employees">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceServicePublisher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceService.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="18" column="64" lean-forward="true" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+          <caret line="20" column="74" lean-forward="true" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/AbstractDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="289">
+          <caret line="19" selection-start-line="19" selection-end-line="21" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1146,7 +1102,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>soalab5:war exploded</last-edited>
+          <last-edited>soalab5:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1159,7 +1115,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Hibernate</last-edited>
+          <last-edited>JPA</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1194,7 +1150,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>JPA|soalab5</last-edited>
+          <last-edited>Web|soalab5</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

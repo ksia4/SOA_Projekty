@@ -1,22 +1,11 @@
 package webservice.parking;
 
-import dao.ParkingSpaceDao;
-import enums.ParkingSpaceState;
-
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 
 @WebService
-public class ParkingSpaceService {
-
-    private ParkingSpaceDao parkingSpace;
-
-    public ParkingSpaceService(){
-        this.parkingSpace = new ParkingSpaceDao();
-    }
+public interface ParkingSpaceService {
 
     @WebMethod
-    public void setStateOfParkingPlace(ParkingSpaceState state){
-        System.out.println("Zmienilem stan miejsca");
-    }
+    String changeParkingSpaceState(int id, boolean state);
 }

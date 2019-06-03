@@ -4,10 +4,11 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.util.List;
+import java.util.Optional;
 
 public abstract class AbstractDao<T> {
-    private EntityManagerFactory factory;
-    private EntityManager em;
+    protected EntityManagerFactory factory;
+    protected EntityManager em;
 
     public AbstractDao(){
         factory = Persistence.createEntityManagerFactory("soalab");
@@ -25,7 +26,7 @@ public abstract class AbstractDao<T> {
         }
     }
 
-//    abstract T get(int id);
+    public abstract T get(int id);
 //    abstract List<T> getAll();
 //    abstract void update(T t, Object[] params);//tu byl string, experymentujemy
 //    abstract void delete(T t);
