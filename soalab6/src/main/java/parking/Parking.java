@@ -1,5 +1,7 @@
 package parking;
 
+import org.codehaus.jackson.annotate.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -14,6 +16,7 @@ public class Parking {
     private int parkingSpacesNumber;        //rozwazyc czy to potrzebne
     private int freeParkingSpacesNumber;    //rozwazyc czy to potrzebne
     private Employee employee;
+    @JsonIgnore
     private List<ParkingSpace> parkingSpaces = new ArrayList<ParkingSpace>(0);
 
     public Parking(){super();}
@@ -61,7 +64,9 @@ public class Parking {
         this.employee = employee;
     }
 
+
     @OneToMany(mappedBy = "parking")
+    @JsonIgnore
     public List<ParkingSpace> getParkingSpaces() {
         return parkingSpaces;
     }

@@ -1,6 +1,8 @@
 package parking;
 
 import enums.ParkingSpaceState;
+import org.codehaus.jackson.annotate.JsonIgnore;
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -9,10 +11,11 @@ import java.util.Date;
 @Table(name = "parking_spaces")
 public class ParkingSpace {
     private int parking_space_id;
-    private Parking parking;
     private ParkingSpaceState parkingSpaceState;
     private Date parkingStartTime;
     private Date paymentExpiry;
+    @JsonIgnore
+    private Parking parking;
 
     public ParkingSpace(){super();}
 

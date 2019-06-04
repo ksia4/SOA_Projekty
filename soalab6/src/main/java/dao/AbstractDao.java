@@ -22,12 +22,13 @@ public abstract class AbstractDao<T> {
             em.getTransaction().commit();
         }
         catch (Exception e){
-            System.err.println("Straszliwy blad!!!: " + e); //zmienic
+            System.err.println("Error in AbstractDao->save()" + e);
         }
     }
 
     public abstract T get(int id);
-//    abstract List<T> getAll();
+    //ACHTUNG
+    abstract List<T> getAll();
 //    abstract void update(T t, Object[] params);//tu byl string, experymentujemy
 //    abstract void delete(T t);
 }
