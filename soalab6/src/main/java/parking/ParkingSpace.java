@@ -16,6 +16,7 @@ public class ParkingSpace {
     private Date paymentExpiry;
     @JsonIgnore
     private Parking parking;
+    private RegisteredPayment payment;
 
     public ParkingSpace(){super();}
 
@@ -70,5 +71,14 @@ public class ParkingSpace {
 
     public void setPaymentExpiry(Date paymentExpiry) {
         this.paymentExpiry = paymentExpiry;
+    }
+
+    @OneToOne(mappedBy = "parkingSpace")
+    public RegisteredPayment getPayment() {
+        return payment;
+    }
+
+    public void setPayment(RegisteredPayment payment) {
+        this.payment = payment;
     }
 }

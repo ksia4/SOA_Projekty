@@ -18,6 +18,7 @@ public class Parking {
     private Employee employee;
     @JsonIgnore
     private List<ParkingSpace> parkingSpaces = new ArrayList<ParkingSpace>(0);
+    private List<RegisteredPayment> payments = new ArrayList<>(0);
 
     public Parking(){super();}
 
@@ -73,5 +74,14 @@ public class Parking {
 
     public void setParkingSpaces(List<ParkingSpace> parkingSpaces) {
         this.parkingSpaces = parkingSpaces;
+    }
+
+    @OneToMany(mappedBy = "parking")
+    public List<RegisteredPayment> getPayments() {
+        return payments;
+    }
+
+    public void setPayments(List<RegisteredPayment> payments) {
+        this.payments = payments;
     }
 }
