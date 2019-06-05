@@ -36,15 +36,4 @@ public class ParkomatService {
         return Response.status(201).entity(p.getPlate()).build();
     }
 
-    @GET
-    @Path("/getKurwa")
-    @Produces("application/json")
-    public PaymentRegistration getKurwa(){
-        PaymentRegistration payment = new PaymentRegistration();
-        payment.setPlate("KWA12345");
-        payment.setParkingId(5);
-        payment.setTimeInHours(2);
-
-        return payment;
-    }
 }

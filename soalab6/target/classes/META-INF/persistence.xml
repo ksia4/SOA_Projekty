@@ -7,10 +7,6 @@
     <persistence-unit name="soalab" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <jta-data-source>java:/jdbc/moje_jndi</jta-data-source>
-        <class>Autor</class>
-        <class>Czytelnik</class>
-        <class>Ksiazka</class>
-        <class>Wypozyczenia</class>
         <class>parking.Employee</class>
         <class>parking.Parking</class>
         <class>parking.ParkingSpace</class>
