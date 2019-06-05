@@ -10,11 +10,10 @@ import java.util.Date;
 @Entity
 @Table(name = "parking_spaces")
 public class ParkingSpace {
-    private int parking_space_id;
+    private int parkingSpaceId;
     private ParkingSpaceState parkingSpaceState;
     private Date parkingStartTime;
     private Date paymentExpiry;
-    @JsonIgnore
     private Parking parking;
     private RegisteredPayment payment;
 
@@ -28,12 +27,12 @@ public class ParkingSpace {
     @Id
     @GeneratedValue
     @Column(name = "PARKING_SPACE_ID", unique = true, nullable = false)
-    public int getParking_space_id() {
-        return parking_space_id;
+    public int getParkingSpaceId() {
+        return parkingSpaceId;
     }
 
-    public void setParking_space_id(int parking_space_id) {
-        this.parking_space_id = parking_space_id;
+    public void setParkingSpaceId(int parkingSpaceId) {
+        this.parkingSpaceId = parkingSpaceId;
     }
 
     @ManyToOne(fetch = FetchType.LAZY)

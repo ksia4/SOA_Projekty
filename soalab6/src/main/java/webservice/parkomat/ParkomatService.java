@@ -1,6 +1,7 @@
 package webservice.parkomat;
 
 import dao.ParkingSpaceDao;
+import parking.Logic;
 import parking.ParkingSpace;
 import parking.PaymentRegistration;
 
@@ -31,8 +32,12 @@ public class ParkomatService {
     @Path("registerPayment")
     @Produces("application/json")
     public Response registerPayment(PaymentRegistration p){
+        Logic.registerPayment(p);
+        //wywalic
         System.out.println("Dostalem auto: "+p.getPlate() +
                 " parking " + p.getParkingId());
+
+        //jakis sensowny komentarz wstawic
         return Response.status(201).entity(p.getPlate()).build();
     }
 

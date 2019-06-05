@@ -17,12 +17,10 @@ public class ParkingSpaceServiceClient {
 
         Service service = Service.create(url, qname);
 
-        ParkingSpaceService hello = service.getPort(ParkingSpaceService.class);
+        ParkingSpaceService parkingSpaceService = service.getPort(ParkingSpaceService.class);
 
-        System.out.println(hello.changeParkingSpaceState(12,false));
-        System.out.println(hello.changeParkingSpaceState(14,true));
-        System.out.println(hello.changeParkingSpaceState(18,true));
-        System.out.println(hello.changeParkingSpaceState(14,false));
+        System.out.println(parkingSpaceService.changeParkingSpaceState(41,true));
+
 
     }
 

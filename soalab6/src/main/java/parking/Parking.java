@@ -13,16 +13,17 @@ import java.util.Set;
 public class Parking {
 
     private int parkingId;
+    private String location;
     private int parkingSpacesNumber;        //rozwazyc czy to potrzebne
     private int freeParkingSpacesNumber;    //rozwazyc czy to potrzebne
     private Employee employee;
-    @JsonIgnore
     private List<ParkingSpace> parkingSpaces = new ArrayList<ParkingSpace>(0);
     private List<RegisteredPayment> payments = new ArrayList<>(0);
 
     public Parking(){super();}
 
-    public Parking(int parkingSpacesNumber){
+    public Parking(String location, int parkingSpacesNumber){
+        this.location = location;
         this.parkingSpacesNumber = parkingSpacesNumber;
         this.freeParkingSpacesNumber = parkingSpacesNumber;
     }
@@ -67,7 +68,6 @@ public class Parking {
 
 
     @OneToMany(mappedBy = "parking")
-    @JsonIgnore
     public List<ParkingSpace> getParkingSpaces() {
         return parkingSpaces;
     }
@@ -83,5 +83,14 @@ public class Parking {
 
     public void setPayments(List<RegisteredPayment> payments) {
         this.payments = payments;
+    }
+
+    @JoinColumn(name = "LOCATION", nullable = false)
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 }
