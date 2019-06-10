@@ -1,14 +1,12 @@
 package webservice.parkomat;
 
 import dao.ParkingSpaceDao;
-import parking.Logic;
-import parking.ParkingSpace;
+import events.EventHandler;
 import parking.PaymentRegistration;
 
 import javax.ws.rs.*;
 
 import javax.ws.rs.core.Response;
-import java.time.LocalDateTime;
 
 
 @Path("/parkomat")
@@ -20,19 +18,19 @@ public class ParkomatService {
     }
 
     //wywalic
-    @GET
-    @Path("getSpace/{id}")
-    @Produces("application/json")
-    public ParkingSpace getParkingSpace(@PathParam("id") String id){
-        ParkingSpace result = dao.get(Integer.parseInt(id));
-        return result;
-    }
+//    @GET
+//    @Path("getSpace/{id}")
+//    @Produces("application/json")
+//    public ParkingSpace getParkingSpace(@PathParam("id") String id){
+//        ParkingSpace result = dao.get(Integer.parseInt(id));
+//        return result;
+//    }
 
     @POST
-    @Path("registerPayment")
+    @Path("registerPayment") //ścieżka powinna być rzeczownikiem!!!
     @Produces("application/json")
     public Response registerPayment(PaymentRegistration p){
-        Logic.registerPayment(p);
+        EventHandler.registerPayment(p);
         //wywalic
         System.out.println("Dostalem auto: "+p.getPlate() +
                 " parking " + p.getParkingId());

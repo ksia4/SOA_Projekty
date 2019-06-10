@@ -35,11 +35,14 @@ public class ParkingSpaceDao extends AbstractDao<ParkingSpace> {
     }
 
     public List<ParkingSpace> getAllSpacesToPaid(int parkingId){
+        System.out.println("Kuku odpowiada");
         String jpql = "select ps from ParkingSpace ps, Parking p where p.parkingId = :pid " +
                 "and (ps.parkingSpaceState = 1 or ps.parkingSpaceState = 3)";
+        System.out.println("Strasznie ważne rzeczy staną się zaraz!!!!");
         List<ParkingSpace> result = em.createQuery(jpql,ParkingSpace.class)
                 .setParameter("pid",parkingId)
                 .getResultList();
+        System.out.println("KRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" + result.size());
         return result;
     }
 }
