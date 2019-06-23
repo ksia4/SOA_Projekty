@@ -8,7 +8,7 @@
           <factory-entry name="soalab" value="c76032cb-6470-45b9-8133-2992c4500600" />
         </datasource-mapping>
         <naming-strategy-map />
-        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/out/artifacts/soalab5_war_exploded/WEB-INF/classes/META-INF/persistence.xml" />
       </configuration>
     </facet>
     <facet type="web" name="Web">
@@ -20,10 +20,6 @@
         <webroots>
           <root url="file://$MODULE_DIR$/web" relative="/" />
         </webroots>
-        <sourceRoots>
-          <root url="file://$MODULE_DIR$/src/main/java" />
-          <root url="file://$MODULE_DIR$/src/main/resources" />
-        </sourceRoots>
       </configuration>
     </facet>
   </component>

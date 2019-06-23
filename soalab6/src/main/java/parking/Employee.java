@@ -12,8 +12,7 @@ public class Employee {
     private String firstName;
     private String lastName;
     private EmployeeRole employeeRole;
-
-    //login, password, role, isLogged ???
+    private String password;
 
     public Employee(){super();}
 
@@ -71,4 +70,15 @@ public class Employee {
     public void setEmployeeRole(EmployeeRole employeeRole) {
         this.employeeRole = employeeRole;
     }
+
+    @Column(name = "PASSWORD")
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+
 }

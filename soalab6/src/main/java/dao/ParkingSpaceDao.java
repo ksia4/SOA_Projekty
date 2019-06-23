@@ -23,26 +23,23 @@ public class ParkingSpaceDao extends AbstractDao<ParkingSpace> {
         return query.getResultList();
     }
 
-    public void update(ParkingSpace s){
-        try{
-            em.getTransaction().begin();
-            em.merge(s);
-            em.getTransaction().commit();
-        }
-        catch (Exception e){
-            System.err.println("Error in ParkingSpaceDao->changeState()" + e);
-        }
-    }
+//    public void update(ParkingSpace s){
+//        try{
+//            em.getTransaction().begin();
+//            em.merge(s);
+//            em.getTransaction().commit();
+//        }
+//        catch (Exception e){
+//            System.err.println("Error in ParkingSpaceDao->changeState()" + e);
+//        }
+//    }
 
     public List<ParkingSpace> getAllSpacesToPaid(int parkingId){
-        System.out.println("Kuku odpowiada");
         String jpql = "select ps from ParkingSpace ps, Parking p where p.parkingId = :pid " +
                 "and (ps.parkingSpaceState = 1 or ps.parkingSpaceState = 3)";
-        System.out.println("Strasznie ważne rzeczy staną się zaraz!!!!");
         List<ParkingSpace> result = em.createQuery(jpql,ParkingSpace.class)
                 .setParameter("pid",parkingId)
                 .getResultList();
-        System.out.println("KRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" + result.size());
         return result;
     }
 }

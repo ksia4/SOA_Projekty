@@ -13,6 +13,7 @@ public class RegisteredPayment {
     private String plate;
     private LocalDateTime startTime;
     private LocalDateTime endTime;
+    private boolean alert;
     //    private PaymentStatus status; to bedzie kolejny enum
 
     @Id
@@ -46,7 +47,7 @@ public class RegisteredPayment {
         this.parkingSpace = parkingSpace;
     }
 
-    @JoinColumn(name = "PLATE", nullable = false)
+    @JoinColumn(name = "PLATE")
     public String getPlate() {
         return plate;
     }
@@ -73,6 +74,12 @@ public class RegisteredPayment {
         this.endTime = endTime;
     }
 
+    @Column(name = "ALERT", nullable = false)
+    public boolean getAlert() {
+        return alert;
+    }
 
-
+    public void setAlert(boolean alert) {
+        this.alert = alert;
+    }
 }

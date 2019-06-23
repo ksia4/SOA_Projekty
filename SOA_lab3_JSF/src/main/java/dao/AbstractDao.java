@@ -25,7 +25,19 @@ public abstract class AbstractDao<T> {
         }
     }
 
+    public void update(T t){
+        try{
+            em.getTransaction().begin();
+            em.merge(t);
+            em.getTransaction().commit();
+        }
+        catch (Exception e){
+            System.err.println("Error in update process" + e);
+        }
+    }
+
     public abstract T get(int id);
+
     //ACHTUNG
     abstract List<T> getAll();
 //    abstract void update(T t, Object[] params);//tu byl string, experymentujemy

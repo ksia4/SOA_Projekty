@@ -9,8 +9,6 @@ import javax.persistence.*;
 public class ParkingSpace {
     private int parkingSpaceId;
     private ParkingSpaceState parkingSpaceState;
-//    private Date parkingStartTime;
-//    private Date paymentExpiry;
     private Parking parking;
     private RegisteredPayment payment;
 

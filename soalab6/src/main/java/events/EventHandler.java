@@ -22,7 +22,17 @@ public class EventHandler {
 
     public static void changeParkingSpaceState(int id, ParkingSpaceState state){
         ParkingSpace space = parkingSpaceDao.get(id);
+
+        RegisteredPayment payment = new RegisteredPayment();
+        payment.setParking(space.getParking());
+        payment.setParkingSpace(space);
+        payment.setStartTime(LocalDateTime.now());
+        payment.setEndTime(LocalDateTime.now().plusSeconds(30));
+        payment.setAlert(false);
+        registeredPaymentDao.save(payment);
+
         space.setParkingSpaceState(state);
+        space.setPayment(payment);
         parkingSpaceDao.update(space);
         //zaktualizowac parking pod wzgledem wolnych miejsc, jesli trzeba
     }
@@ -30,18 +40,17 @@ public class EventHandler {
     public static void registerPayment(PaymentRegistration p){
         Parking parking = parkingDao.get(p.getParkingId());
         ParkingSpace parkingSpace = matchParkingSpace(parking);
+        RegisteredPayment payment = registeredPaymentDao.get(parkingSpace.getPayment().getPaymentId());
         LocalDateTime startTime = LocalDateTime.now();
         LocalDateTime endTime = LocalDateTime.now().plusHours(p.getTimeInHours());
 
-        RegisteredPayment registeredPayment = new RegisteredPayment();
-        registeredPayment.setPlate(p.getPlate());
-        registeredPayment.setParking(parking);
-        registeredPayment.setStartTime(startTime);
-        registeredPayment.setEndTime(endTime);
-        registeredPayment.setParkingSpace(parkingSpace);
-        changeParkingSpaceState(parkingSpace.getParkingSpaceId(),ParkingSpaceState.PAID);
-
-        registeredPaymentDao.save(registeredPayment);
+        payment.setPlate(p.getPlate());
+        payment.setStartTime(startTime);
+        payment.setEndTime(endTime);
+        parkingSpace.setParkingSpaceState(ParkingSpaceState.PAID);
+        //changeParkingSpaceState(parkingSpace.getParkingSpaceId(),ParkingSpaceState.PAID);
+        parkingSpaceDao.update(parkingSpace);
+        registeredPaymentDao.update(payment);
     }
 
     private static ParkingSpace matchParkingSpace(Parking parking){

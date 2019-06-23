@@ -12,8 +12,6 @@ import java.util.Date;
 public class ParkingSpace {
     private int parkingSpaceId;
     private ParkingSpaceState parkingSpaceState;
-//    private Date parkingStartTime;
-//    private Date paymentExpiry;
     private Parking parking;
     private RegisteredPayment payment;
 
@@ -53,24 +51,6 @@ public class ParkingSpace {
     public void setParkingSpaceState(ParkingSpaceState parkingSpaceState) {
         this.parkingSpaceState = parkingSpaceState;
     }
-
-//    @Column(name = "PARKING_START_TIME")
-//    public Date getParkingStartTime() {
-//        return parkingStartTime;
-//    }
-//
-//    public void setParkingStartTime(Date parkingStartTime) {
-//        this.parkingStartTime = parkingStartTime;
-//    }
-//
-//    @Column(name = "PAYMENT_EXPIRY")
-//    public Date getPaymentExpiry() {
-//        return paymentExpiry;
-//    }
-//
-//    public void setPaymentExpiry(Date paymentExpiry) {
-//        this.paymentExpiry = paymentExpiry;
-//    }
 
     @OneToOne(mappedBy = "parkingSpace")
     public RegisteredPayment getPayment() {
