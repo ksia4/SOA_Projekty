@@ -1,8 +1,10 @@
 package dao;
 
+import parking.Employee;
 import parking.ParkingSpace;
 
 import javax.persistence.Query;
+import javax.xml.registry.infomodel.User;
 import java.util.List;
 
 public class ParkingSpaceDao extends AbstractDao<ParkingSpace> {
@@ -38,6 +40,15 @@ public class ParkingSpaceDao extends AbstractDao<ParkingSpace> {
                 "and (ps.parkingSpaceState = 1 or ps.parkingSpaceState = 3)";
         List<ParkingSpace> result = em.createQuery(jpql,ParkingSpace.class)
                 .setParameter("pid",parkingId)
+                .getResultList();
+        return result;
+    }
+
+    public List<ParkingSpace> getSpacesByUser(int employeeId){
+        String jpql = "select ps from ParkingSpace ps, Parking p where " +
+                "ps.parking.employee.employeeId = :eid";
+        List<ParkingSpace> result = em.createQuery(jpql,ParkingSpace.class)
+                .setParameter("eid",employeeId)
                 .getResultList();
         return result;
     }

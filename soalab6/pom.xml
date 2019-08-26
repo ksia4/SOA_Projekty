@@ -133,6 +133,13 @@
             <!--<version>2.3.0</version>-->
             <!--<type>pom</type>-->
         <!--</dependency>-->
+
+
+        <dependency>
+            <groupId>org.picketbox</groupId>
+            <artifactId>picketbox</artifactId>
+            <version>4.0.20.Beta2</version>
+        </dependency>
     </dependencies>
 
 

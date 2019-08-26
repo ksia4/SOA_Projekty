@@ -3,6 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+
+    <display-name>Parking</display-name>
+
+    <welcome-file-list>
+        <welcome-file>/index.xhtml</welcome-file>
+    </welcome-file-list>
+
+
     <servlet>
         <servlet-name>Faces Servlet</servlet-name>
         <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
@@ -12,4 +20,57 @@
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.xhtml</url-pattern>
     </servlet-mapping>
+
+
+    <!--Defining security constraint for type of roles available-->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>ADMIN</web-resource-name>
+            <url-pattern>/dashboard/*</url-pattern>
+            <http-method>POST</http-method>
+            <http-method>GET</http-method>
+            <http-method>PUT</http-method>
+            <http-method>DELETE</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>ADMIN</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>PARKING_CONTROLLER</web-resource-name>
+            <url-pattern>/dashboard/*</url-pattern>
+            <http-method>POST</http-method>
+            <http-method>GET</http-method>
+            <http-method>PUT</http-method>
+            <http-method>DELETE</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>ADMIN</role-name>
+            <role-name>PARKING_CONTROLLER</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <!--Defining security constraint for type of roles available-->
+
+    <!--Defining type of authenitcation mechanism-->
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <realm-name>parking</realm-name>
+        <form-login-config>
+            <form-login-page>/index.xhtml</form-login-page>
+            <form-error-page>/error.xhtml</form-error-page>
+        </form-login-config>
+    </login-config>
+    <!--Defining type of authenitcation mechanism-->
+
+    <!--Denining security role-->
+    <security-role>
+        <role-name>ADMIN</role-name>
+    </security-role>
+
+    <security-role>
+        <role-name>PARKING_CONTROLLER</role-name>
+    </security-role>
+    <!--Denining security role-->
 </web-app>

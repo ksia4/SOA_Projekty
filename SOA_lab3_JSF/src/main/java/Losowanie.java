@@ -5,7 +5,7 @@ import javax.faces.bean.SessionScoped;
 import javax.faces.component.UIComponent;
 import javax.faces.component.UIInput;
 import javax.faces.context.FacesContext;
-
+//achtung: do usuniecia
 @ManagedBean(name = "Losowanie")
 @SessionScoped
 public class Losowanie {

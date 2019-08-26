@@ -11,15 +11,17 @@ public class Employee {
     private Parking parking;
     private String firstName;
     private String lastName;
-    private EmployeeRole employeeRole;
+    private String employeeRole;
     private String password;
+    private String login;
 
     public Employee(){super();}
 
-    public Employee(String fName, String lName, EmployeeRole role){
+    public Employee(String fName, String lName, String role, String login){
         this.firstName = fName;
         this.lastName = lName;
         this.employeeRole = role;
+        this.login = login;
     }
 
     @Id
@@ -63,11 +65,11 @@ public class Employee {
     }
 
     @Column(name = "ROLE")
-    public EmployeeRole getEmployeeRole() {
+    public String getEmployeeRole() {
         return employeeRole;
     }
 
-    public void setEmployeeRole(EmployeeRole employeeRole) {
+    public void setEmployeeRole(String employeeRole) {
         this.employeeRole = employeeRole;
     }
 
@@ -80,5 +82,12 @@ public class Employee {
         this.password = password;
     }
 
+    @Column(name = "LOGIN")
+    public String getLogin() {
+        return login;
+    }
 
+    public void setLogin(String login) {
+        this.login = login;
+    }
 }

@@ -26,7 +26,8 @@ public class NotificationHandler {
     public void sendJMS(RegisteredPayment payment) {
         System.out.println("SEND++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++!!!");
 
-        String text = "Alarm!!! miejsce " + payment.getParkingSpace().getParkingSpaceId();
+        //Message format:   LOCATION_SPACE ID
+        String text = payment.getParkingSpace().getParking().getLocation() + "_" + payment.getParkingSpace().getParkingSpaceId();
 
         try {
             Context ctx = new InitialContext();

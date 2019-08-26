@@ -19,10 +19,10 @@ public class DataInitializer {
         pa.save(parking1);
         pa.save(parking2);
 
-        em.save(new Employee("Krzysztof","Jarzyna",EmployeeRole.ADMIN));
-        em.save(new Employee("Jacek","Malina",EmployeeRole.PARKING_CONTROLLER));
-        em.save(new Employee("Stanisław","Pierzyna",EmployeeRole.PARKING_CONTROLLER));
-        em.save(new Employee("Zbigniew","Zwierzyna",EmployeeRole.PARKING_CONTROLLER));
+        em.save(new Employee("Krzysztof","Jarzyna","ADMIN","szefu"));
+        em.save(new Employee("Jacek","Malina","PARKING_CONTROLLER","malina"));
+        em.save(new Employee("Stanisław","Pierzyna","PARKING_CONTROLLER","stachu"));
+        em.save(new Employee("Zbigniew","Zwierzyna","PARKING_CONTROLLER","zwierzu"));
         for (int i=0 ; i<10 ; ++i)
             ps.save(new ParkingSpace(parking1));
         for (int i=0 ; i<15 ; ++i)

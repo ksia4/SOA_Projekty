@@ -9,7 +9,7 @@ import java.net.URL;
 public class ParkingSpaceServiceClient {
     public static void main(String[] args) throws Exception {
 
-        URL url = new URL("http://localhost:8080/ParkingSpaceServiceImpl?wsdl");
+        URL url = new URL("http://localhost:8080/soalab5_war/ParkingSpaceServiceImpl");
 
         //1st argument service URI, refer to wsdl document above
         //2nd argument is service name, refer to wsdl document above
@@ -19,7 +19,7 @@ public class ParkingSpaceServiceClient {
 
         ParkingSpaceService parkingSpaceService = service.getPort(ParkingSpaceService.class);
 
-        System.out.println(parkingSpaceService.changeParkingSpaceState(103,true));
+        System.out.println(parkingSpaceService.changeParkingSpaceState(174,true));
 
 
     }

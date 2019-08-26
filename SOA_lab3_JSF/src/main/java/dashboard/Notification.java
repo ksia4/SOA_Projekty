@@ -1,7 +1,9 @@
 package dashboard;
 
+import dao.EmployeeDao;
 import dao.ParkingDao;
 import dao.RegisteredPaymentDao;
+import parking.Employee;
 import parking.Parking;
 import parking.RegisteredPayment;
 
@@ -26,31 +28,31 @@ import java.util.Map;
 @ApplicationScoped
 public class Notification {
     private ParkingDao parkingDao;
+    private EmployeeDao employeeDao;
     private Map<String, List<String>> messages = new HashMap<String, List<String>>();
 
-    public Notification(){
+    public Notification() {
         this.parkingDao = new ParkingDao();
         List<Parking> parkingList = parkingDao.getAll();
-        for(Parking p:parkingList)
-            this.messages.put(p.getLocation(),new ArrayList<String>());
+        for (Parking p : parkingList)
+            this.messages.put(p.getLocation(), new ArrayList<String>());
+
+        //Testowanie powiadomien, do usuniecia
+        Parking notificationTest = parkingDao.get(168);
+        this.messages.get(notificationTest.getLocation()).add("Achtung! Wiadomosc probna!");
+        //koniec testowania
 
     }
 
-    public Map<String, List<String>> getMessages(){
+    public Map<String, List<String>> getMessages() {
         return messages;
     }
 
-    public List<String> getNotification(){
-
-//        EntityManagerFactory factory = Persistence.createEntityManagerFactory("project-parking");
-//        EntityManager em;
+    public List<String> getNotification() {
+        employeeDao = new EmployeeDao();
         HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
-        String username = request.getRemoteUser();
-//        em = factory.createEntityManager();
-//        em.getTransaction().begin();
-//        TypedQuery<Users> query = em.createQuery("SELECT u FROM Users u WHERE u.username = :user_name", Users.class);
-//        query.setParameter("user_name",username);
-//        Users user = query.getSingleResult();
+        String login = request.getRemoteUser();
+        Employee employee = employeeDao.getEmployeeByLogin(login);
 
         try {
             Context ctx = new InitialContext();
@@ -64,20 +66,21 @@ public class Notification {
             con.start();
             while (true) {
                 Message msg = receiver.receive(100); // blokowanie (ale nie dłużej niż n ms)
+                System.out.println("+++++++++++++++++++++++++++++++++++Dostalem jakies message");
                 if (msg instanceof TextMessage) {
+                    System.out.println("+++++++++++++++++++++++++++++++Przetwarzanie tresci");
                     TextMessage text = (TextMessage) msg;
-                    String split[] = text.getText().split("sqolz");
+                    String split[] = text.getText().split("_");
+                    System.out.println("++++++++++++tresc: " + split[0]);
                     if (split.length == 2) {
                         List<String> l = messages.get(split[0]);
-                        l.add(split[1]);
+                        l.add("Nieoplacone miejsce o numerze: " + split[1]);
                     }
                 } else if (msg != null) {
                     System.out.println("Received no text message");
                     List<Parking> parkingList = parkingDao.getAll();
                     List<String> l = messages.get(parkingList.get(0).getLocation());
-                    l.add("Booobbbbuuuubbbaaaa");
                 } else if (msg == null) {
-                    System.out.println("Buba");
                     break;
                 }
             }
@@ -90,22 +93,21 @@ public class Notification {
         }
 
 
-
-
         List<String> m = new ArrayList<String>();
-//        if (user.getRole().equals("USER")) {
-//            for (String s: messages.get(user.getArea())){
-//                m.add(s);
-//            }
-//            return m;
-//        } else{
-            for (String key : messages.keySet()){
-                for (String s: messages.get(key)){
+        if (employee.getEmployeeRole().equals("PARKING_CONTROLLER")) {
+            for (String s : messages.get(employee.getParking().getLocation())) {
+                m.add(s);
+            }
+            return m;
+        } else {
+            for (String key : messages.keySet()) {
+                for (String s : messages.get(key)) {
                     m.add(s);
                 }
             }
             return m;
 
-    }
+        }
 
+    }
 }
