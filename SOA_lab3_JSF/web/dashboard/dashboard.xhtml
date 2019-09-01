@@ -9,54 +9,97 @@
 <head>
     <title>Dashboard</title>
 
-    Ale wez cos kurde wyswietl!
-    <h:dataTable value="#{parkingSpaces.all}" var="ps"
-                 styleClass="order-table"
-                 headerClass="order-table-header"
-                 rowClasses="order-table-odd-row,order-table-even-row"
-    >
-
-        <h:column>
-            <f:facet name="header">Parking ID</f:facet>
-            #{ps.parking.parkingId}
-        </h:column>
-
-        <h:column>
-            <f:facet name="header">Space ID</f:facet>
-            #{ps.parkingSpaceId}
-        </h:column>
-
-        <h:column>
-            <f:facet name="header">State</f:facet>
-            #{ps.parkingSpaceState}
-        </h:column>
-
-        <h:column>
-            <f:facet name="header">Parking Start Time</f:facet>
-            #{ps.payment.startTime}
-        </h:column>
-
-        <h:column>
-            <f:facet name="header">Parking End Time</f:facet>
-            #{ps.payment.endTime}
-        </h:column>
-
-        <h:column>
-            <f:facet name="header">Plate</f:facet>
-            #{ps.payment.plate}
-        </h:column>
-
-    </h:dataTable>
-
-    Powiadomienia
-
-    <ui:repeat value="#{notification.notification}" var="n" >
-        #{n}<br/>
-    </ui:repeat>
-
-
 </head>
 <body>
+You are logged as: #{parkingSpaces.userName}(<b>#{parkingSpaces.login}</b>)<br />
+Your role is: #{parkingSpaces.role}
+<br />
+<h:form>
+    <h:commandButton value="Wyloguj" type="submit" action="#{login.logout}" />
+</h:form>
+
+
+<h1>PARKING SUMMARY: #{parkingSpaces.parking}</h1>
+<h:dataTable value="#{parkingSpaces.all}" var="ps">
+
+    <h:column>
+        <f:facet name="header">Parking ID</f:facet>
+        #{ps.parking.parkingId}
+    </h:column>
+
+    <h:column>
+        <f:facet name="header">Space ID</f:facet>
+        #{ps.parkingSpaceId}
+    </h:column>
+
+    <h:column>
+        <f:facet name="header">State</f:facet>
+        #{ps.parkingSpaceState}
+    </h:column>
+
+    <h:column>
+        <f:facet name="header">Parking Start Time</f:facet>
+        #{ps.payment.startTime}
+    </h:column>
+
+    <h:column>
+        <f:facet name="header">Parking End Time</f:facet>
+        #{ps.payment.endTime}
+    </h:column>
+
+    <h:column>
+        <f:facet name="header">Plate</f:facet>
+        #{ps.payment.plate}
+    </h:column>
+
+</h:dataTable>
+
+
+
+
+
+
+
+<h1>Korygowanie tabelki</h1>
+
+<h:form>
+    <h:selectOneMenu value="#{correction.spaceId}">
+        Space to correct:
+        <f:selectItem itemValue="#{null}" itemLabel="--select--" />
+        <f:selectItems value="#{parkingSpaces.spacesList}" var="space" />
+        <br />
+    </h:selectOneMenu>
+
+    <h:selectOneMenu value="#{correction.ticketId}">
+        Ticket:
+        <f:selectItem itemValue="#{null}" itemLabel="--select--" />
+        <f:selectItems value="#{parkingSpaces.ticketsList}" var="ticket" />
+        <br />
+    </h:selectOneMenu>
+    <h:commandButton value="submit" type="submit" action="#{correction.correct()}" />
+</h:form>
+
+<h1>Powiadomienia</h1>
+
+<ui:repeat value="#{notification.notification}" var="n" >
+    #{n}<br/>
+</ui:repeat>
+
+
+
+
+
+
+
+
+<h1>Zmień hasło</h1>
+<h:form>
+    <h:inputText value="#{password.new_password}" /><br/>
+    <ui:repeat var="u" value="#{password.users}" varStatus="status">
+        <h:commandButton value="Zmień haslo dla: #{u}" type="submit" action="#{password.changePassword(u)}" />
+        <br/>
+    </ui:repeat>
+</h:form>
 
 </body>
 </html>

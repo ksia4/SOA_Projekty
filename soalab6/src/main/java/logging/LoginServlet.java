@@ -1,5 +1,7 @@
 package logging;
 
+import org.apache.http.HttpResponse;
+
 import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -37,6 +39,7 @@ public class LoginServlet extends HttpServlet {
             response.getWriter().println("principal=" + request.getUserPrincipal().getClass().getSimpleName());
             response.getWriter().println("username=" + sampleEJB.getPrincipalName());
             response.getWriter().println("description=" + principal.getDescription());
+            response.sendRedirect("http://localhost:8080/dashboard/dashboard.xhtml");
 
         } catch (ServletException e) {
             response.sendError(HttpServletResponse.SC_FORBIDDEN);

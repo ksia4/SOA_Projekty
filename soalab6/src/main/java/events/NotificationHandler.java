@@ -5,10 +5,14 @@ import dao.RegisteredPaymentDao;
 import parking.RegisteredPayment;
 
 import javax.ejb.Singleton;
+import javax.faces.context.ExternalContext;
+import javax.faces.context.FacesContext;
 import javax.jms.*;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
+import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 import java.util.List;
 
 @Singleton
@@ -45,6 +49,12 @@ public class NotificationHandler {
             System.out.println("Sending Message: " + msg.getText());
             sender.send(msg);
             con.close();
+
+            /////////// moze zadziala
+//            System.out.println("+++++++++++++++++++++++++++++++++++refreszuje z maina");
+//            ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
+//            ec.redirect(((HttpServletRequest) ec.getRequest()).getRequestURI());
+            ////////////
 
         } catch (NamingException e) {
             e.printStackTrace();

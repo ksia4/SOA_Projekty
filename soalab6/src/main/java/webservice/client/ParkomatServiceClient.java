@@ -15,15 +15,15 @@ import java.time.LocalDateTime;
 public class ParkomatServiceClient {
     public static void main(String[] args){
         PaymentRegistration p = new PaymentRegistration();
-        p.setParkingId(57);
+        p.setParkingId(168);
         p.setPlate("KR12345");
-        p.setTimeInHours(4);
+        p.setTimeInHours(1);
 
 
         try {
 
             ClientRequest request = new ClientRequest(
-                    "http://localhost:8080/rest/parkomat/registerPayment");
+                    "http://localhost:8080/rest/parkomat/registerPayment");//bylo rest
             request.accept("application/json");
             String input = "{\"parkingId\":"+p.getParkingId()
                     +",\"plate\":\""+ p.getPlate()

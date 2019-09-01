@@ -1,3 +1,5 @@
+package system;
+
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
@@ -10,31 +12,11 @@ public class Login {
     private String username;
     private String password;
 
-
-//    public void login() {
-//
-//        FacesContext context = FacesContext.getCurrentInstance();
-//
-//        if(this.username.equals("admin") && this.password.equals("admin")){
-//            context.getExternalContext().getSessionMap().put("user", username);
-//            try {
-//                context.getExternalContext().redirect("Home.xhtml");
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//        else  {
-//            //Send an error message on Login Failure
-//            context.addMessage(null, new FacesMessage("Authentication Failed. Check username or password."));
-//
-//        }
-//    }
-
     public void logout() {
         FacesContext context = FacesContext.getCurrentInstance();
         context.getExternalContext().invalidateSession();
         try {
-            context.getExternalContext().redirect("dashboard.xhtml");
+            context.getExternalContext().redirect("index.xhtml");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -42,8 +24,6 @@ public class Login {
 
 
     public String getUsername() {
-
-        System.out.println("XDDD:get username");
         return username;
     }
 
@@ -52,7 +32,6 @@ public class Login {
     }
 
     public String getPassword() {
-        System.out.println("XDDD:get password");
         return password;
     }
 

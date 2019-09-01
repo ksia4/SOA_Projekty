@@ -1,24 +1,22 @@
-package dashboard;
+package system;
 
+import com.sun.faces.facelets.tag.jsf.core.ViewHandler;
 import dao.EmployeeDao;
 import dao.ParkingDao;
-import dao.RegisteredPaymentDao;
 import parking.Employee;
 import parking.Parking;
-import parking.RegisteredPayment;
 
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
+import javax.faces.component.UIViewRoot;
+import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.jms.*;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.TypedQuery;
 import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -63,12 +61,23 @@ public class Notification {
             MessageConsumer receiver = ses.createConsumer(dest);
 
 
+            ////////////
+//            ExternalContext context = FacesContext.getCurrentInstance().getExternalContext();
+//            String refreshpage = context.getViewRoot().getViewId();
+//            ViewHandler handler = context.getApplication().getViewHandler();
+//            UIViewRoot root = handler.createView(context, refreshpage);
+//            root.setViewId(refreshpage);
+//            context.setViewRoot(root);
+
+
+            /////////
+
             con.start();
             while (true) {
                 Message msg = receiver.receive(100); // blokowanie (ale nie dłużej niż n ms)
-                System.out.println("+++++++++++++++++++++++++++++++++++Dostalem jakies message");
+//                System.out.println("+++++++++++++++++++++++++++++++++++Dostalem jakies message");
                 if (msg instanceof TextMessage) {
-                    System.out.println("+++++++++++++++++++++++++++++++Przetwarzanie tresci");
+//                    System.out.println("+++++++++++++++++++++++++++++++Przetwarzanie tresci");
                     TextMessage text = (TextMessage) msg;
                     String split[] = text.getText().split("_");
                     System.out.println("++++++++++++tresc: " + split[0]);
@@ -76,6 +85,13 @@ public class Notification {
                         List<String> l = messages.get(split[0]);
                         l.add("Nieoplacone miejsce o numerze: " + split[1]);
                     }
+
+                    /////////// moze zadziala
+                    System.out.println("+++++++++++++++++++++++++++++++++++refreszuje z webapki");
+                    ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
+                    ec.redirect(((HttpServletRequest) ec.getRequest()).getRequestURI());
+                    ////////////
+
                 } else if (msg != null) {
                     System.out.println("Received no text message");
                     List<Parking> parkingList = parkingDao.getAll();
@@ -89,6 +105,8 @@ public class Notification {
         } catch (NamingException e) {
             e.printStackTrace();
         } catch (JMSException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
 

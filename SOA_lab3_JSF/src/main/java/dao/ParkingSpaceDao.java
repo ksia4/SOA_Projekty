@@ -45,7 +45,7 @@ public class ParkingSpaceDao extends AbstractDao<ParkingSpace> {
     }
 
     public List<ParkingSpace> getSpacesByUser(int employeeId){
-        String jpql = "select ps from ParkingSpace ps, Parking p where " +
+        String jpql = "select DISTINCT ps from ParkingSpace ps, Parking p where " +
                 "ps.parking.employee.employeeId = :eid";
         List<ParkingSpace> result = em.createQuery(jpql,ParkingSpace.class)
                 .setParameter("eid",employeeId)

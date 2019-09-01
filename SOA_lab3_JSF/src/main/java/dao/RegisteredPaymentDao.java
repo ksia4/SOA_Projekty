@@ -13,7 +13,7 @@ public class RegisteredPaymentDao extends AbstractDao<RegisteredPayment> {
     }
 
     @Override
-    List<RegisteredPayment> getAll() {
+    public List<RegisteredPayment> getAll() {
         Query query = em.createQuery("SELECT s FROM RegisteredPayment s");
         return query.getResultList();
     }

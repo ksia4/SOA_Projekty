@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SOA_lab3_JSF" target="1.5" />
+      <module name="SOA_lab3_JSF" target="7" />
     </bytecodeTargetLevel>
   </component>
 </project>

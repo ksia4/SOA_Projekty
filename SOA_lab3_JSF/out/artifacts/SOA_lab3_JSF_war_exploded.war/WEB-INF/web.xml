@@ -21,11 +21,11 @@
         <url-pattern>*.xhtml</url-pattern>
     </servlet-mapping>
 
-
     <!--Defining security constraint for type of roles available-->
     <security-constraint>
         <web-resource-collection>
-            <web-resource-name>ADMIN</web-resource-name>
+            <!--<web-resource-name>ADMIN</web-resource-name>-->
+            <web-resource-name>dashboard</web-resource-name>
             <url-pattern>/dashboard/*</url-pattern>
             <http-method>POST</http-method>
             <http-method>GET</http-method>
@@ -39,7 +39,8 @@
 
     <security-constraint>
         <web-resource-collection>
-            <web-resource-name>PARKING_CONTROLLER</web-resource-name>
+            <!--<web-resource-name>PARKING_CONTROLLER</web-resource-name>-->
+            <web-resource-name>dashboard</web-resource-name>
             <url-pattern>/dashboard/*</url-pattern>
             <http-method>POST</http-method>
             <http-method>GET</http-method>
@@ -56,7 +57,7 @@
     <!--Defining type of authenitcation mechanism-->
     <login-config>
         <auth-method>FORM</auth-method>
-        <realm-name>parking</realm-name>
+        <realm-name>moje_jndi</realm-name>
         <form-login-config>
             <form-login-page>/index.xhtml</form-login-page>
             <form-error-page>/error.xhtml</form-error-page>
@@ -73,4 +74,5 @@
         <role-name>PARKING_CONTROLLER</role-name>
     </security-role>
     <!--Denining security role-->
+
 </web-app>

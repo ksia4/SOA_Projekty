@@ -19,7 +19,7 @@ public class ParkingSpaceServiceClient {
 
         ParkingSpaceService parkingSpaceService = service.getPort(ParkingSpaceService.class);
 
-        System.out.println(parkingSpaceService.changeParkingSpaceState(174,true));
+        System.out.println(parkingSpaceService.changeParkingSpaceState(183,true));
 
 
     }
