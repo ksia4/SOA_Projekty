@@ -58,7 +58,12 @@ public class ParkingSpacesBean {
     }
 
     public String getParking(){
-        return employee.getParking().getLocation();
+        if(employee.getEmployeeRole().equals("ADMIN"))
+            return "ALL LOCATIONS";
+        else if(employee.getParking() == null)
+            return "NO LOCATION ASSIGNED";
+        else
+            return employee.getParking().getLocation();
     }
 
     public ParkingSpace getIncorrectSpace() {
@@ -70,10 +75,9 @@ public class ParkingSpacesBean {
     }
 
     public List<String> getSpacesList() {
-        //zbieranie ttylko zainteresoawnych
         List<ParkingSpace> spaces;
         if(employee.getEmployeeRole().equals("ADMIN"))
-            spaces = parkingSpaceDao.getAll();
+            spaces = parkingSpaceDao.getAllNonEmptySpaces();
         else
             spaces = parkingSpaceDao.getSpacesToCorrection(employee.getEmployeeId());
         List<String> spacesList = new ArrayList<String>();
@@ -87,13 +91,17 @@ public class ParkingSpacesBean {
         List<RegisteredPayment> tickets;
         if(employee.getEmployeeRole().equals("ADMIN"))
             tickets = registeredPaymentDao.getAll();
+        else if(employee.getParking() == null)
+            return new ArrayList<String>(0);
         else
             tickets = registeredPaymentDao.getTicketsToCorrection(employee.getParking().getParkingId());
         List<String> ticketList = new ArrayList<String>();
         for(RegisteredPayment t : tickets){
             String plate = t.getPlate() == null ? "???" : t.getPlate();
+            String space = t.getParkingSpace() == null ?
+                            "???" : Integer.toString(t.getParkingSpace().getParkingSpaceId());
             ticketList.add("ID: " + Integer.toString(t.getPaymentId())+
-                            " Space: " + Integer.toString(t.getParkingSpace().getParkingSpaceId()) +
+                            " Space: " + space +
                             " Plate: " + plate);
         }
         return ticketList;

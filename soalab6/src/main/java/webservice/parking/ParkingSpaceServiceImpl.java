@@ -1,6 +1,5 @@
 package webservice.parking;
 
-import enums.ParkingSpaceState;
 import events.EventHandler;
 import events.NotificationHandler;
 
@@ -9,10 +8,6 @@ import javax.jws.WebService;
 @WebService(endpointInterface = "webservice.parking.ParkingSpaceService")
 public class ParkingSpaceServiceImpl implements ParkingSpaceService {
     private boolean thread_log = false;
-
-//    public ParkingSpaceServiceImpl(){
-//
-//    }
 
     @Override
     public String changeParkingSpaceState(int id,boolean state) {
@@ -28,11 +23,10 @@ public class ParkingSpaceServiceImpl implements ParkingSpaceService {
             thread.start();
             thread_log = true;
         }
-
         if(state)
-            EventHandler.changeParkingSpaceState(id,ParkingSpaceState.WAITING_FOR_PAYMENT);
+            EventHandler.handleCarArriveEvent(id);
         else
-            EventHandler.changeParkingSpaceState(id,ParkingSpaceState.FREE);
+            EventHandler.handleCarLeavingEvent(id);
         return "DONE!";
 
     }

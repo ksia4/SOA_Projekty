@@ -38,7 +38,7 @@ public class RegisteredPayment {
     }
 
     @OneToOne
-    @JoinColumn(name = "PARKING_SPACE_ID", nullable = false)
+    @JoinColumn(name = "PARKING_SPACE_ID", nullable = true)
     public ParkingSpace getParkingSpace() {
         return parkingSpace;
     }
@@ -81,5 +81,17 @@ public class RegisteredPayment {
 
     public void setAlert(boolean alert) {
         this.alert = alert;
+    }
+
+    public String startTimeShortForm(){
+        return Integer.toString(this.startTime.getHour()) + ":" +
+                Integer.toString(this.startTime.getMinute()) + ":" +
+                Integer.toString(this.startTime.getSecond());
+    }
+
+    public String endTimeShortForm(){
+        return Integer.toString(this.endTime.getHour()) + ":" +
+                Integer.toString(this.endTime.getMinute()) + ":" +
+                Integer.toString(this.endTime.getSecond());
     }
 }

@@ -39,12 +39,12 @@ Your role is: #{parkingSpaces.role}
 
     <h:column>
         <f:facet name="header">Parking Start Time</f:facet>
-        #{ps.payment.startTime}
+        #{ps.payment.startTimeShortForm()}
     </h:column>
 
     <h:column>
         <f:facet name="header">Parking End Time</f:facet>
-        #{ps.payment.endTime}
+        #{ps.payment.endTimeShortForm()}
     </h:column>
 
     <h:column>
@@ -53,7 +53,7 @@ Your role is: #{parkingSpaces.role}
     </h:column>
 
 </h:dataTable>
-
+<br /><button value="Refresh Page" onClick="window.location.reload();" /><br />
 
 
 
@@ -63,21 +63,30 @@ Your role is: #{parkingSpaces.role}
 <h1>Korygowanie tabelki</h1>
 
 <h:form>
+    Assign correct ticket to space: <br />
     <h:selectOneMenu value="#{correction.spaceId}">
-        Space to correct:
-        <f:selectItem itemValue="#{null}" itemLabel="--select--" />
+        <f:selectItem itemValue="#{null}" itemLabel="--select space--" />
         <f:selectItems value="#{parkingSpaces.spacesList}" var="space" />
-        <br />
     </h:selectOneMenu>
 
     <h:selectOneMenu value="#{correction.ticketId}">
-        Ticket:
-        <f:selectItem itemValue="#{null}" itemLabel="--select--" />
+        <f:selectItem itemValue="#{null}" itemLabel="--select ticket--" />
         <f:selectItems value="#{parkingSpaces.ticketsList}" var="ticket" />
-        <br />
     </h:selectOneMenu>
-    <h:commandButton value="submit" type="submit" action="#{correction.correct()}" />
+    <h:commandButton value="Correct space" type="submit" action="#{correction.correct()}" />
 </h:form>
+<br />
+
+<h:form>
+    Punish:<br />
+    <h:selectOneMenu value="#{correction.spaceToPunishId}">
+        <f:selectItem itemValue="#{null}" itemLabel="--select punished space--" />
+        <f:selectItems value="#{parkingSpaces.spacesList}" var="space" />
+    </h:selectOneMenu>
+    <h:commandButton value="Change state to PUNISHED"
+                     type="submit" action="#{correction.punish()}" />
+</h:form>
+
 
 <h1>Powiadomienia</h1>
 
@@ -94,11 +103,18 @@ Your role is: #{parkingSpaces.role}
 
 <h1>Zmień hasło</h1>
 <h:form>
-    <h:inputText value="#{password.new_password}" /><br/>
-    <ui:repeat var="u" value="#{password.users}" varStatus="status">
-        <h:commandButton value="Zmień haslo dla: #{u}" type="submit" action="#{password.changePassword(u)}" />
+
+    <h:inputSecret value="#{password.newPassword}" /><br/>
+    <h:inputSecret value="#{password.repeatedPassword}" /><br />
+
+    <h:selectOneMenu value="#{password.userPassChange}">
+        <f:selectItem itemValue="#{null}" itemLabel="--select--" />
+        <f:selectItems value="#{password.users}" var="ticket" />
+    </h:selectOneMenu>
+    <!--<ui:repeat var="u" value="#{password.users}" varStatus="status">-->
+        <h:commandButton value="Change password" type="submit" action="#{password.changePassword()}" />
         <br/>
-    </ui:repeat>
+    <!--</ui:repeat>-->
 </h:form>
 
 </body>

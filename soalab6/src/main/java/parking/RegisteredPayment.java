@@ -38,7 +38,7 @@ public class RegisteredPayment {
     }
 
     @OneToOne
-    @JoinColumn(name = "PARKING_SPACE_ID", nullable = false)
+    @JoinColumn(name = "PARKING_SPACE_ID", nullable = true)
     public ParkingSpace getParkingSpace() {
         return parkingSpace;
     }

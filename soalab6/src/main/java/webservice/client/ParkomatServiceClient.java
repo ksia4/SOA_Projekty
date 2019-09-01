@@ -15,10 +15,10 @@ import java.time.LocalDateTime;
 public class ParkomatServiceClient {
     public static void main(String[] args){
         PaymentRegistration p = new PaymentRegistration();
-        p.setParkingId(169);
-        p.setPlate("XD4567");
-//        p.setPlate("KWA10RH");
-        p.setTimeInHours(2);
+        p.setParkingId(264);
+//        p.setPlate("XD4567");
+        p.setPlate("KWA10RH");
+        p.setTimeInHours(3);
 
 
         try {

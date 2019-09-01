@@ -2,6 +2,7 @@ package events;
 
 import dao.ParkingSpaceDao;
 import dao.RegisteredPaymentDao;
+import enums.ParkingSpaceState;
 import parking.RegisteredPayment;
 
 import javax.ejb.Singleton;
@@ -19,18 +20,12 @@ import java.util.List;
 public class NotificationHandler {
     private ParkingSpaceDao parkingSpaceDao = new ParkingSpaceDao();
     private RegisteredPaymentDao registeredPaymentDao = new RegisteredPaymentDao();
-//    EntityManagerFactory factory = Persistence.createEntityManagerFactory("project-parking");
-//    EntityManager em;
-//    int i = 0;
-
-//    @Inject
-//    private JMSMessageProducer jmsMessageProducer;
-
 
     public void sendJMS(RegisteredPayment payment) {
-        System.out.println("SEND++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++!!!");
 
-        //Message format:   LOCATION_SPACE ID
+        EventHandler.handlePaymentTimeOut(payment, ParkingSpaceState.UNPAID);
+
+        //Message format:   LOCATION_SPACE-ID
         String text = payment.getParkingSpace().getParking().getLocation() + "_" + payment.getParkingSpace().getParkingSpaceId();
 
         try {
@@ -41,7 +36,6 @@ public class NotificationHandler {
             Session ses = con.createSession(false, Session.AUTO_ACKNOWLEDGE);
             MessageProducer sender = ses.createProducer(dest);
 
-
             con.start();
             TextMessage msg = ses.createTextMessage();
             msg.setObjectProperty("STREFA", payment.getParking().getLocation());
@@ -49,12 +43,6 @@ public class NotificationHandler {
             System.out.println("Sending Message: " + msg.getText());
             sender.send(msg);
             con.close();
-
-            /////////// moze zadziala
-//            System.out.println("+++++++++++++++++++++++++++++++++++refreszuje z maina");
-//            ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
-//            ec.redirect(((HttpServletRequest) ec.getRequest()).getRequestURI());
-            ////////////
 
         } catch (NamingException e) {
             e.printStackTrace();

@@ -29,7 +29,9 @@ import java.util.List;
 public class PasswordBean {
     private EmployeeDao employeeDao = new EmployeeDao();
     private Employee user;
-    private String new_password;
+    private String newPassword;
+    private String repeatedPassword;
+    private String userPassChange;
 
     public List<String> getUsers(){ //albo usunac albo dziedziczenie
 
@@ -39,7 +41,6 @@ public class PasswordBean {
         user = employeeDao.getEmployeeByLogin(login);
 
 
-        //String sql;
         List<Employee> employeeList = new ArrayList<Employee>();
         if (user.getEmployeeRole().equals("PARKING_CONTROLLER"))
             employeeList.add(user);
@@ -54,14 +55,16 @@ public class PasswordBean {
     }
 
 
-    public void changePassword(String userToChange){
-        if (userToChange.equals(user.getLogin()) || user.getEmployeeRole().equals("ADMINISTRATOR")) {
+    public void changePassword(){
+        if(!newPassword.equals(repeatedPassword))
+            return;//tutaj jakis komentarz moze dac
+        if (userPassChange.equals(user.getLogin()) || user.getEmployeeRole().equals("ADMIN")) {
             try {
                 String password = "haslo";
 
                 MessageDigest md = MessageDigest.getInstance("MD5");
 
-                byte[] hashInBytes = md.digest(new_password.getBytes(StandardCharsets.UTF_8));
+                byte[] hashInBytes = md.digest(newPassword.getBytes(StandardCharsets.UTF_8));
 
                 StringBuilder sb = new StringBuilder();
                 for (byte b : hashInBytes) {
@@ -72,22 +75,38 @@ public class PasswordBean {
                 String passwordHash = sb.toString();
 
 
-                Employee userChangePassword = employeeDao.getEmployeeByLogin(userToChange);
+                Employee userChangePassword = employeeDao.getEmployeeByLogin(userPassChange);
                 userChangePassword.setPassword(passwordHash);
                 employeeDao.update(userChangePassword);
             } catch (NoSuchAlgorithmException e) {
                 e.printStackTrace();
             }
         }
-        new_password = null;
+        newPassword = null;
     }
 
     //zmienic nazewnictwo bo oczy bolo
-    public String getNew_password() {
-        return new_password;
+    public String getNewPassword() {
+        return newPassword;
     }
 
-    public void setNew_password(String new_password) {
-        this.new_password = new_password;
+    public void setNewPassword(String newPassword) {
+        this.newPassword = newPassword;
+    }
+
+    public String getRepeatedPassword() {
+        return repeatedPassword;
+    }
+
+    public void setRepeatedPassword(String repeatedPassword) {
+        this.repeatedPassword = repeatedPassword;
+    }
+
+    public String getUserPassChange() {
+        return userPassChange;
+    }
+
+    public void setUserPassChange(String userPassChange) {
+        this.userPassChange = userPassChange;
     }
 }

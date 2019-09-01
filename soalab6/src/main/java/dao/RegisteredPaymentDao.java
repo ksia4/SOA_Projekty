@@ -22,7 +22,8 @@ public class RegisteredPaymentDao extends AbstractDao<RegisteredPayment>{
     public List<RegisteredPayment> getExpiredPayments(){
         LocalDateTime now = LocalDateTime.now();
         String jpql = "select p from RegisteredPayment p where p.alert = false " +
-                "and p.endTime < :time";
+                "and p.endTime < :time and p.parkingSpace is not null " +
+                "and p.parkingSpace.parkingSpaceState != 4";
         List<RegisteredPayment> result = em.createQuery(jpql,RegisteredPayment.class)
                 .setParameter("time",now)
                 .getResultList();

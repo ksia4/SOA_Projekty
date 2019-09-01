@@ -61,4 +61,11 @@ public class ParkingSpaceDao extends AbstractDao<ParkingSpace> {
                 .getResultList();
         return result;
     }
+
+    public List<ParkingSpace> getAllNonEmptySpaces(){
+        String jpql = "select DISTINCT ps from ParkingSpace ps where " +
+                "ps.parkingSpaceState != 0";
+        List<ParkingSpace> result = em.createQuery(jpql,ParkingSpace.class).getResultList();
+        return result;
+    }
 }

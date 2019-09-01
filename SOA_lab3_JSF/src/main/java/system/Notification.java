@@ -36,8 +36,8 @@ public class Notification {
             this.messages.put(p.getLocation(), new ArrayList<String>());
 
         //Testowanie powiadomien, do usuniecia
-        Parking notificationTest = parkingDao.get(168);
-        this.messages.get(notificationTest.getLocation()).add("Achtung! Wiadomosc probna!");
+//        Parking notificationTest = parkingDao.get(168);
+//        this.messages.get(notificationTest.getLocation()).add("Achtung! Wiadomosc probna!");
         //koniec testowania
 
     }
@@ -60,27 +60,12 @@ public class Notification {
             Session ses = con.createSession(false, Session.AUTO_ACKNOWLEDGE);
             MessageConsumer receiver = ses.createConsumer(dest);
 
-
-            ////////////
-//            ExternalContext context = FacesContext.getCurrentInstance().getExternalContext();
-//            String refreshpage = context.getViewRoot().getViewId();
-//            ViewHandler handler = context.getApplication().getViewHandler();
-//            UIViewRoot root = handler.createView(context, refreshpage);
-//            root.setViewId(refreshpage);
-//            context.setViewRoot(root);
-
-
-            /////////
-
             con.start();
             while (true) {
                 Message msg = receiver.receive(100); // blokowanie (ale nie dłużej niż n ms)
-//                System.out.println("+++++++++++++++++++++++++++++++++++Dostalem jakies message");
                 if (msg instanceof TextMessage) {
-//                    System.out.println("+++++++++++++++++++++++++++++++Przetwarzanie tresci");
                     TextMessage text = (TextMessage) msg;
                     String split[] = text.getText().split("_");
-                    System.out.println("++++++++++++tresc: " + split[0]);
                     if (split.length == 2) {
                         List<String> l = messages.get(split[0]);
                         l.add("Nieoplacone miejsce o numerze: " + split[1]);
@@ -113,6 +98,8 @@ public class Notification {
 
         List<String> m = new ArrayList<String>();
         if (employee.getEmployeeRole().equals("PARKING_CONTROLLER")) {
+            if(employee.getParking() == null)
+                return m;
             for (String s : messages.get(employee.getParking().getLocation())) {
                 m.add(s);
             }

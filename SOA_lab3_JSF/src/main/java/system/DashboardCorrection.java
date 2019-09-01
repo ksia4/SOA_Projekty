@@ -6,6 +6,7 @@ import com.sun.xml.internal.messaging.saaj.util.Base64;
 import dao.EmployeeDao;
 import dao.ParkingSpaceDao;
 import dao.RegisteredPaymentDao;
+import enums.ParkingSpaceState;
 import org.jboss.ejb3.annotation.SecurityDomain;
 import parking.Employee;
 import parking.ParkingSpace;
@@ -15,13 +16,17 @@ import javax.annotation.security.DeclareRoles;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.faces.bean.SessionScoped;
+import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import javax.validation.constraints.Null;
+import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -39,32 +44,9 @@ public class DashboardCorrection {
     private Employee user;
     private String spaceId;
     private String ticketId;
+    private String spaceToPunishId;
 
-
-//    public List<String> getUsers(){
-//
-//        String login;
-//        HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
-//        login = request.getRemoteUser();
-//        user = employeeDao.getEmployeeByLogin(login);
-//
-//
-//        //String sql;
-//        List<Employee> employeeList = new ArrayList<Employee>();
-//        if (user.getEmployeeRole().equals("PARKING_CONTROLLER"))
-//            employeeList.add(user);
-//        else
-//            employeeList.addAll(employeeDao.getAll());
-//
-//        List<String> ret = new ArrayList<String>();
-//        for (Employee e : employeeList){
-//            ret.add(e.getLogin());
-//        }
-//        return ret;
-//    }
-
-
-    public void correct(){
+    public void correct() throws IOException {
         ParkingSpace space1 = parkingSpaceDao.get(Integer.parseInt(spaceId));
         RegisteredPayment payment2 = space1.getPayment();
         String splitTicket[] = ticketId.split(" ");
@@ -74,14 +56,26 @@ public class DashboardCorrection {
         space1.setPayment(payment1);
         payment1.setParkingSpace(space1);
 
-        space2.setPayment(payment2);
-        payment2.setParkingSpace(space2);
+        if(space2 != null) {
+            space2.setPayment(payment2);
+            payment2.setParkingSpace(space2);
+        } else{
+            payment2.setParkingSpace(null);
+        }
 
         parkingSpaceDao.save(space1);
         parkingSpaceDao.save(space2);
         registeredPaymentDao.save(payment1);
         registeredPaymentDao.save(payment2);
+        ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
+        ec.redirect("dashboard.xhtml");
 
+    }
+
+    public void punish() throws IOException {
+        ParkingSpace space = parkingSpaceDao.get(Integer.parseInt(spaceToPunishId));
+        space.setParkingSpaceState(ParkingSpaceState.PUNISHED);
+        parkingSpaceDao.update(space);
     }
 
     public void setSpaceId(String spaceId) {
@@ -98,5 +92,13 @@ public class DashboardCorrection {
 
     public String getTicketId(){
         return this.ticketId;
+    }
+
+    public String getSpaceToPunishId() {
+        return spaceToPunishId;
+    }
+
+    public void setSpaceToPunishId(String spaceToPunishId) {
+        this.spaceToPunishId = spaceToPunishId;
     }
 }
