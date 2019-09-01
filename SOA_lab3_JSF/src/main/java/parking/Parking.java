@@ -1,12 +1,13 @@
 package parking;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "parkings")
-public class Parking {
+public class Parking implements Serializable {
 
     private int parkingId;
     private String location;

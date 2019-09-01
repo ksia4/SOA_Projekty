@@ -2,6 +2,7 @@ package system;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
+import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import java.io.IOException;
 
@@ -12,11 +13,11 @@ public class Login {
     private String username;
     private String password;
 
-    public void logout() {
+    public void logout() throws IOException {
         FacesContext context = FacesContext.getCurrentInstance();
         context.getExternalContext().invalidateSession();
         try {
-            context.getExternalContext().redirect("index.xhtml");
+            context.getExternalContext().redirect("dashboard.xhtml");
         } catch (IOException e) {
             e.printStackTrace();
         }

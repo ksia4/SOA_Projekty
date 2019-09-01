@@ -3,10 +3,11 @@ package parking;
 import enums.ParkingSpaceState;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "parking_spaces")
-public class ParkingSpace {
+public class ParkingSpace implements Serializable {
     private int parkingSpaceId;
     private ParkingSpaceState parkingSpaceState;
     private Parking parking;

@@ -1,22 +1,19 @@
 package system;
 
-import com.sun.faces.facelets.tag.jsf.core.ViewHandler;
 import dao.EmployeeDao;
 import dao.ParkingDao;
 import parking.Employee;
 import parking.Parking;
+import parking.ParkingSpace;
 
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
-import javax.faces.component.UIViewRoot;
-import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.jms.*;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.servlet.http.HttpServletRequest;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -34,16 +31,14 @@ public class Notification {
         List<Parking> parkingList = parkingDao.getAll();
         for (Parking p : parkingList)
             this.messages.put(p.getLocation(), new ArrayList<String>());
-
-        //Testowanie powiadomien, do usuniecia
-//        Parking notificationTest = parkingDao.get(168);
-//        this.messages.get(notificationTest.getLocation()).add("Achtung! Wiadomosc probna!");
-        //koniec testowania
-
     }
 
     public Map<String, List<String>> getMessages() {
         return messages;
+    }
+
+    public void deleteNotification(ParkingSpace space){
+        List<String> notifications = messages.get(Integer.toString(space.getParking().getParkingId()));
     }
 
     public List<String> getNotification() {
@@ -62,6 +57,7 @@ public class Notification {
 
             con.start();
             while (true) {
+
                 Message msg = receiver.receive(100); // blokowanie (ale nie dłużej niż n ms)
                 if (msg instanceof TextMessage) {
                     TextMessage text = (TextMessage) msg;
@@ -70,12 +66,6 @@ public class Notification {
                         List<String> l = messages.get(split[0]);
                         l.add("Nieoplacone miejsce o numerze: " + split[1]);
                     }
-
-                    /////////// moze zadziala
-                    System.out.println("+++++++++++++++++++++++++++++++++++refreszuje z webapki");
-                    ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
-                    ec.redirect(((HttpServletRequest) ec.getRequest()).getRequestURI());
-                    ////////////
 
                 } else if (msg != null) {
                     System.out.println("Received no text message");
@@ -91,10 +81,7 @@ public class Notification {
             e.printStackTrace();
         } catch (JMSException e) {
             e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
         }
-
 
         List<String> m = new ArrayList<String>();
         if (employee.getEmployeeRole().equals("PARKING_CONTROLLER")) {

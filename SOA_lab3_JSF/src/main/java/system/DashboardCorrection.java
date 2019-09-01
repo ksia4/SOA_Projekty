@@ -22,9 +22,11 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
+import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.servlet.http.HttpSessionEvent;
 import javax.validation.constraints.Null;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -76,6 +78,8 @@ public class DashboardCorrection {
         ParkingSpace space = parkingSpaceDao.get(Integer.parseInt(spaceToPunishId));
         space.setParkingSpaceState(ParkingSpaceState.PUNISHED);
         parkingSpaceDao.update(space);
+        ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
+        ec.redirect("dashboard.xhtml");
     }
 
     public void setSpaceId(String spaceId) {

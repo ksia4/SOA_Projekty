@@ -5,11 +5,12 @@ import org.codehaus.jackson.annotate.JsonIgnore;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 @Entity
 @Table(name = "parking_spaces")
-public class ParkingSpace {
+public class ParkingSpace implements Serializable {
     private int parkingSpaceId;
     private ParkingSpaceState parkingSpaceState;
     private Parking parking;

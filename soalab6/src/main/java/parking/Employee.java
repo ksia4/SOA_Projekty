@@ -3,10 +3,11 @@ package parking;
 import enums.EmployeeRole;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "employees")
-public class Employee {
+public class Employee implements Serializable {
     private int employeeId;
     private Parking parking;
     private String firstName;

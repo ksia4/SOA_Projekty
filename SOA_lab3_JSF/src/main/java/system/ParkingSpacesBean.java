@@ -12,8 +12,10 @@ import javax.annotation.security.DeclareRoles;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.faces.bean.SessionScoped;
+import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,11 +32,15 @@ public class ParkingSpacesBean {
     private ParkingSpace incorrectSpace;
     private RegisteredPayment paymentToCorrection;
 
-    public ParkingSpacesBean(){
+    public ParkingSpacesBean() throws IOException {
         HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
         String userLogin;
         userLogin = request.getRemoteUser();
         employee = employeeDao.getEmployeeByLogin(userLogin);
+        if(employee == null){
+            ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
+            ec.redirect("index.xhtml");
+        }
     }
 
     public List<ParkingSpace> getAll(){
