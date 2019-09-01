@@ -7,75 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad022827-8562-4864-a0e2-fe92c7f9d056" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SOA_lab3_JSF.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SOA_lab3_JSF.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/Losowanie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/Losowanie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/dao/AbstractDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/dao/AbstractDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/dao/EmployeeDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/dao/EmployeeDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/dao/ParkingDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/dao/ParkingDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/dao/ParkingSpaceDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/dao/ParkingSpaceDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/dao/RegisteredPaymentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/dao/RegisteredPaymentDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/dashboard/Notification.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/dashboard/ParkingSpacesBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/enums/EmployeeRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/enums/EmployeeRole.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/enums/ParkingSpaceState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/enums/ParkingSpaceState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/parking/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/parking/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/parking/Parking.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/parking/Parking.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/parking/ParkingSpace.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/parking/ParkingSpace.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/parking/PaymentRegistration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/parking/PaymentRegistration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/parking/RegisteredPayment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/parking/RegisteredPayment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/faces-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/dashboard/dashboard.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/dashboard/dashboard.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ParkingSpaceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ParkingSpaceDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/RegisteredPaymentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/RegisteredPaymentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/enums/EmployeeRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enums/EmployeeRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/system/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/system/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/system/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/system/Notification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/system/ParkingSpacesBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/system/ParkingSpacesBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Losowanie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Losowanie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/AbstractDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/AbstractDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/EmployeeDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/EmployeeDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/ParkingDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/ParkingDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/ParkingSpaceDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/ParkingSpaceDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/RegisteredPaymentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/RegisteredPaymentDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dashboard/Notification.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dashboard/ParkingSpacesBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/enums/EmployeeRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/enums/EmployeeRole.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/enums/ParkingSpaceState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/enums/ParkingSpaceState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parking/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parking/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parking/Parking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parking/Parking.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parking/ParkingSpace.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parking/ParkingSpace.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parking/PaymentRegistration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parking/PaymentRegistration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parking/RegisteredPayment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parking/RegisteredPayment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/dashboard/dashboard.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/dashboard/dashboard.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soalab6/.idea/libraries/Mojarra_2_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soalab6/.idea/libraries/Mojarra_2_2_1__2_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../soalab6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../soalab6/out/artifacts/soalab5_war/soalab5_war.war" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/out/artifacts/soalab5_war/soalab5_war.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soalab6/out/artifacts/soalab5_war_exploded/WEB-INF/classes/events/NotificationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/out/artifacts/soalab5_war_exploded/WEB-INF/classes/events/NotificationHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soalab6/out/artifacts/soalab5_war_exploded/WEB-INF/classes/logging/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/out/artifacts/soalab5_war_exploded/WEB-INF/classes/logging/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soalab6/out/artifacts/soalab5_war_exploded/WEB-INF/classes/dao/ParkingSpaceDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/out/artifacts/soalab5_war_exploded/WEB-INF/classes/dao/ParkingSpaceDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soalab6/out/artifacts/soalab5_war_exploded/WEB-INF/classes/events/EventHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/out/artifacts/soalab5_war_exploded/WEB-INF/classes/events/EventHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../soalab6/out/artifacts/soalab5_war_exploded/WEB-INF/classes/webservice/client/ParkingSpaceServiceClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/out/artifacts/soalab5_war_exploded/WEB-INF/classes/webservice/client/ParkingSpaceServiceClient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../soalab6/out/artifacts/soalab5_war_exploded/WEB-INF/classes/webservice/client/ParkomatServiceClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/out/artifacts/soalab5_war_exploded/WEB-INF/classes/webservice/client/ParkomatServiceClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soalab6/out/artifacts/soalab5_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/out/artifacts/soalab5_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soalab6/out/artifacts/soalab5_war_exploded/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/out/artifacts/soalab5_war_exploded/index.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../soalab6/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soalab6/src/main/java/events/NotificationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/src/main/java/events/NotificationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soalab6/src/main/java/logging/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/src/main/java/logging/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soalab6/src/main/java/dao/ParkingSpaceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/src/main/java/dao/ParkingSpaceDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soalab6/src/main/java/enums/ParkingSpaceState.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/src/main/java/enums/ParkingSpaceState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soalab6/src/main/java/events/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/src/main/java/events/EventHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../soalab6/src/main/java/webservice/client/ParkingSpaceServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/src/main/java/webservice/client/ParkingSpaceServiceClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../soalab6/src/main/java/webservice/client/ParkomatServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/src/main/java/webservice/client/ParkomatServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soalab6/target/classes/events/NotificationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/target/classes/events/NotificationHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soalab6/target/classes/logging/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/target/classes/logging/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soalab6/src/main/java/webservice/parkomat/ParkomatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/src/main/java/webservice/parkomat/ParkomatService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soalab6/target/classes/dao/ParkingSpaceDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/target/classes/dao/ParkingSpaceDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soalab6/target/classes/events/EventHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/target/classes/events/EventHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../soalab6/target/classes/webservice/client/ParkingSpaceServiceClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/target/classes/webservice/client/ParkingSpaceServiceClient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../soalab6/target/classes/webservice/client/ParkomatServiceClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/target/classes/webservice/client/ParkomatServiceClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soalab6/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soalab6/web/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/web/index.xhtml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -144,7 +95,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/dashboard/dashboard.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1368">
+            <state relative-caret-position="1728">
               <caret line="72" column="49" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
             </state>
           </provider>
@@ -153,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/system/ParkingSpacesBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+            <state relative-caret-position="144">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,18 +116,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/system/DashboardCorrection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+            <state relative-caret-position="912">
+              <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2526#2527#0" expanded="true" />
-                <element signature="e#2564#2565#0" expanded="true" />
-                <element signature="e#2601#2602#0" expanded="true" />
-                <element signature="e#2635#2636#0" expanded="true" />
-                <element signature="e#2612#2613#0" expanded="true" />
-                <element signature="e#2652#2653#0" expanded="true" />
-                <element signature="e#2762#2763#0" expanded="true" />
-                <element signature="e#2788#2789#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -185,7 +128,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/system/PasswordBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="837">
+            <state relative-caret-position="912">
               <caret line="56" column="50" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -203,11 +146,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -216,7 +159,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/parking/ParkingSpace.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1104">
-              <caret line="58" column="7" lean-forward="true" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+              <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -233,13 +176,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/parking/RegisteredPayment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="13" />
+            <state relative-caret-position="720">
+              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="das://8e2dd5e5-810e-4cfb-a999-cb0f381fb77f/database/postgres/schema/public/table/parking_spaces">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -302,8 +245,8 @@
         <option value="$PROJECT_DIR$/src/main/java/parking/RegisteredPayment.java" />
         <option value="$PROJECT_DIR$/src/main/java/parking/ParkingSpace.java" />
         <option value="$PROJECT_DIR$/src/main/java/system/ParkingSpacesBean.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/main/java/system/DashboardCorrection.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
       </list>
     </option>
   </component>
@@ -339,6 +282,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -433,7 +377,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -632,11 +575,13 @@
       <workItem from="1567244652780" duration="2155000" />
       <workItem from="1567248136162" duration="7578000" />
       <workItem from="1567263699471" duration="8630000" />
+      <workItem from="1567329012384" duration="1389000" />
+      <workItem from="1567335348737" duration="1552000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127606000" />
+    <option name="totallyTimeSpent" value="130547000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -651,7 +596,7 @@
     <frame x="1431" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.69923663" visible="true" weight="0.17815775" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.69923663" visible="true" weight="0.17981246" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -662,7 +607,7 @@
       <window_info id="Persistence" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3284974" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.41761658" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43316063" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -850,12 +795,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/dupa.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
@@ -880,12 +825,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jboss-web.xml">
+      <provider editor-type-id="com.intellij.javaee.oss.jboss.editor.JBossWebRootProvider" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
         </state>
       </provider>
-      <provider editor-type-id="com.intellij.javaee.oss.jboss.editor.JBossWebRootProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/Przegrana.xhtml">
       <provider selected="true" editor-type-id="text-editor">
@@ -925,21 +870,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/dashboard/dashboard.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="72" column="49" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://8e2dd5e5-810e-4cfb-a999-cb0f381fb77f/database/postgres/schema/public/table/employees">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8e2dd5e5-810e-4cfb-a999-cb0f381fb77f/database/postgres/schema/public/table/parking_spaces">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -953,41 +884,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/parking/RegisteredPayment.java">
+    <entry file="file://$PROJECT_DIR$/web/dashboard/dashboard.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/parking/PaymentRegistration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/parking/ParkingSpace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="58" column="7" lean-forward="true" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/system/PasswordBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="56" column="50" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1728">
+          <caret line="72" column="49" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/system/ParkingSpacesBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        <state relative-caret-position="144">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -996,18 +903,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/system/DashboardCorrection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+        <state relative-caret-position="912">
+          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2526#2527#0" expanded="true" />
-            <element signature="e#2564#2565#0" expanded="true" />
-            <element signature="e#2601#2602#0" expanded="true" />
-            <element signature="e#2635#2636#0" expanded="true" />
-            <element signature="e#2612#2613#0" expanded="true" />
-            <element signature="e#2652#2653#0" expanded="true" />
-            <element signature="e#2762#2763#0" expanded="true" />
-            <element signature="e#2788#2789#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/system/PasswordBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="56" column="50" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1022,7 +931,35 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/parking/ParkingSpace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/parking/PaymentRegistration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/parking/RegisteredPayment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8e2dd5e5-810e-4cfb-a999-cb0f381fb77f/database/postgres/schema/public/table/parking_spaces">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>

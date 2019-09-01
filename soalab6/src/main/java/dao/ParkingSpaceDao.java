@@ -3,6 +3,7 @@ package dao;
 import enums.ParkingSpaceState;
 import parking.ParkingSpace;
 
+import javax.persistence.NoResultException;
 import javax.persistence.Query;
 import java.util.List;
 
@@ -40,6 +41,19 @@ public class ParkingSpaceDao extends AbstractDao<ParkingSpace> {
         List<ParkingSpace> result = em.createQuery(jpql,ParkingSpace.class)
                 .setParameter("pid",parkingId)
                 .getResultList();
+        return result;
+    }
+
+    public ParkingSpace getSpaceByPlate(String plate){
+        String jpql = "select ps from ParkingSpace ps where ps.payment.plate = :pl";
+        ParkingSpace result;
+        try {
+            result = em.createQuery(jpql, ParkingSpace.class)
+                    .setParameter("pl", plate)
+                    .getSingleResult();
+        }catch (NoResultException e){
+            return null;
+        }
         return result;
     }
 }

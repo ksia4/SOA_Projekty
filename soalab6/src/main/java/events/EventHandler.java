@@ -38,12 +38,11 @@ public class EventHandler {
     }
 
     public static void registerPayment(PaymentRegistration p){
-        Parking parking = parkingDao.get(p.getParkingId());
-        ParkingSpace parkingSpace = matchParkingSpace(parking);
-        RegisteredPayment payment = registeredPaymentDao.get(parkingSpace.getPayment().getPaymentId());
+//        Parking parking = parkingDao.get(p.getParkingId()); //usunac
+        ParkingSpace parkingSpace = matchParkingSpace(p);
+        RegisteredPayment payment = parkingSpace.getPayment();
         LocalDateTime startTime = LocalDateTime.now();
         LocalDateTime endTime = LocalDateTime.now().plusHours(p.getTimeInHours());
-
         payment.setPlate(p.getPlate());
         payment.setStartTime(startTime);
         payment.setEndTime(endTime);
@@ -53,8 +52,28 @@ public class EventHandler {
         registeredPaymentDao.update(payment);
     }
 
-    private static ParkingSpace matchParkingSpace(Parking parking){
-        List<ParkingSpace> allSpaces = new ArrayList<>(parkingSpaceDao.getAllSpacesToPaid(parking.getParkingId()));
-        return allSpaces.get(0);
+//    private static ParkingSpace matchParkingSpace(Parking parking){
+//        List<ParkingSpace> allSpaces = new ArrayList<>(parkingSpaceDao.getAllSpacesToPaid(parking.getParkingId()));
+//        return allSpaces.get(0);
+//    }
+
+    public static ParkingSpace matchParkingSpace(PaymentRegistration p){
+        ParkingSpace resultSpace = parkingSpaceDao.getSpaceByPlate(p.getPlate());
+        if(resultSpace == null){
+            Parking parking = parkingDao.get(p.getParkingId());
+            List<ParkingSpace> unpaidSpaces = new ArrayList<ParkingSpace>(parkingSpaceDao.getAllSpacesToPaid(parking.getParkingId()));
+            resultSpace = unpaidSpaces.get(0);
+            for(ParkingSpace ps : unpaidSpaces){
+                if(ps.getPayment().getStartTime().isBefore(resultSpace.getPayment().getStartTime())){
+                    resultSpace = ps;
+                }
+            }
+        }
+
+        return resultSpace;
+        //wizecie miejsca parkingowego po rejestracji
+        //jezeli zwroci null to zbieramy najstarsze nieoplacone miejsce i jeszcze nie ukarane
+        //jak dokupil pod rejestracje to stary bilecik mozna albo zaktualizowac albo wywalic z bazy
+        //ale raczej wywalic bo bilet bedzie mial nowe id
     }
 }

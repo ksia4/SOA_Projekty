@@ -17,13 +17,14 @@ public class ParkomatServiceClient {
         PaymentRegistration p = new PaymentRegistration();
         p.setParkingId(168);
         p.setPlate("KR12345");
-        p.setTimeInHours(1);
+//        p.setPlate("KWA10RH");
+        p.setTimeInHours(2);
 
 
         try {
 
             ClientRequest request = new ClientRequest(
-                    "http://localhost:8080/rest/parkomat/registerPayment");//bylo rest
+                    "http://localhost:8080/soalab5_war/rest/parkomat/registerPayment");//bylo rest
             request.accept("application/json");
             String input = "{\"parkingId\":"+p.getParkingId()
                     +",\"plate\":\""+ p.getPlate()
@@ -36,7 +37,8 @@ public class ParkomatServiceClient {
 
             if (response.getStatus() != 201) {
                 throw new RuntimeException("Failed : HTTP error code : "
-                        + response.getStatus());
+                        + response.getStatus() + " "
+                        + response.getResponseStatus());
             }
 
             BufferedReader br = new BufferedReader(new InputStreamReader(

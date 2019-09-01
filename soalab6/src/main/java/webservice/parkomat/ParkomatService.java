@@ -30,6 +30,7 @@ public class ParkomatService {
     @Path("registerPayment") //ścieżka powinna być rzeczownikiem!!!
     @Produces("application/json")
     public Response registerPayment(PaymentRegistration p){
+        System.out.println("Tutaj jeszcze wchodze");
         EventHandler.registerPayment(p);
         //wywalic
         System.out.println("Dostalem auto: "+p.getPlate() +
