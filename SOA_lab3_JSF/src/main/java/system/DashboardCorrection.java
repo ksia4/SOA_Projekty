@@ -67,7 +67,8 @@ public class DashboardCorrection {
     public void correct(){
         ParkingSpace space1 = parkingSpaceDao.get(Integer.parseInt(spaceId));
         RegisteredPayment payment2 = space1.getPayment();
-        RegisteredPayment payment1 = registeredPaymentDao.get(Integer.parseInt(ticketId));
+        String splitTicket[] = ticketId.split(" ");
+        RegisteredPayment payment1 = registeredPaymentDao.get(Integer.parseInt(splitTicket[1]));
         ParkingSpace space2 = payment1.getParkingSpace();
 
         space1.setPayment(payment1);

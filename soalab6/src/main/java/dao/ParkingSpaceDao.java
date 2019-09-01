@@ -36,7 +36,7 @@ public class ParkingSpaceDao extends AbstractDao<ParkingSpace> {
 //    }
 
     public List<ParkingSpace> getAllSpacesToPaid(int parkingId){
-        String jpql = "select ps from ParkingSpace ps, Parking p where p.parkingId = :pid " +
+        String jpql = "select ps from ParkingSpace ps where ps.parking.parkingId = :pid " +
                 "and (ps.parkingSpaceState = 1 or ps.parkingSpaceState = 3)";
         List<ParkingSpace> result = em.createQuery(jpql,ParkingSpace.class)
                 .setParameter("pid",parkingId)

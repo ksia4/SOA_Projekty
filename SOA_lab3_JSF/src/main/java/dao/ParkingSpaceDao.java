@@ -52,4 +52,13 @@ public class ParkingSpaceDao extends AbstractDao<ParkingSpace> {
                 .getResultList();
         return result;
     }
+
+    public List<ParkingSpace> getSpacesToCorrection(int employeeId){
+        String jpql = "select DISTINCT ps from ParkingSpace ps, Parking p where " +
+                "ps.parking.employee.employeeId = :eid and ps.parkingSpaceState != 0";
+        List<ParkingSpace> result = em.createQuery(jpql,ParkingSpace.class)
+                .setParameter("eid",employeeId)
+                .getResultList();
+        return result;
+    }
 }

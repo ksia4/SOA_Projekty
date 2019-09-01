@@ -15,8 +15,8 @@ import java.time.LocalDateTime;
 public class ParkomatServiceClient {
     public static void main(String[] args){
         PaymentRegistration p = new PaymentRegistration();
-        p.setParkingId(168);
-        p.setPlate("KR12345");
+        p.setParkingId(169);
+        p.setPlate("XD4567");
 //        p.setPlate("KWA10RH");
         p.setTimeInHours(2);
 

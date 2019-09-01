@@ -29,9 +29,6 @@ public class ParkingSpacesBean {
     private Employee employee;
     private ParkingSpace incorrectSpace;
     private RegisteredPayment paymentToCorrection;
-//    private List<ParkingSpace> spacesList = new ArrayList<ParkingSpace>();
-//    private List<RegisteredPayment> ticketsList = new ArrayList<RegisteredPayment>();
-
 
     public ParkingSpacesBean(){
         HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
@@ -47,21 +44,6 @@ public class ParkingSpacesBean {
             return parkingSpaceDao.getAll();
     }
 
-//    public void correctTicket(){    //zmienic nazwe
-//        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-//        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-//        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-//        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-//        System.out.println("space = " + incorrectSpace.getParkingSpaceId());
-//        System.out.println("payment = " + paymentToCorrection.getParkingSpace().getParkingSpaceId());
-//        incorrectSpace.setPayment(paymentToCorrection);
-//        paymentToCorrection.setParkingSpace(incorrectSpace);
-//        parkingSpaceDao.save(incorrectSpace);
-//        registeredPaymentDao.save(paymentToCorrection);
-//        System.out.println("++++++++++++++++++++++++++++++++DONE");
-//        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-//        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-//    }
 
     public String getUserName(){
         return employee.getFirstName() + " " + employee.getLastName();
@@ -88,7 +70,12 @@ public class ParkingSpacesBean {
     }
 
     public List<String> getSpacesList() {
-        List<ParkingSpace> spaces = parkingSpaceDao.getAll();
+        //zbieranie ttylko zainteresoawnych
+        List<ParkingSpace> spaces;
+        if(employee.getEmployeeRole().equals("ADMIN"))
+            spaces = parkingSpaceDao.getAll();
+        else
+            spaces = parkingSpaceDao.getSpacesToCorrection(employee.getEmployeeId());
         List<String> spacesList = new ArrayList<String>();
         for(ParkingSpace s : spaces){
             spacesList.add(Integer.toString(s.getParkingSpaceId()));
@@ -97,10 +84,17 @@ public class ParkingSpacesBean {
     }
 
     public List<String> getTicketsList() {
-        List<RegisteredPayment> tickets = registeredPaymentDao.getAll();
+        List<RegisteredPayment> tickets;
+        if(employee.getEmployeeRole().equals("ADMIN"))
+            tickets = registeredPaymentDao.getAll();
+        else
+            tickets = registeredPaymentDao.getTicketsToCorrection(employee.getParking().getParkingId());
         List<String> ticketList = new ArrayList<String>();
         for(RegisteredPayment t : tickets){
-            ticketList.add(Integer.toString(t.getPaymentId()));
+            String plate = t.getPlate() == null ? "???" : t.getPlate();
+            ticketList.add("ID: " + Integer.toString(t.getPaymentId())+
+                            " Space: " + Integer.toString(t.getParkingSpace().getParkingSpaceId()) +
+                            " Plate: " + plate);
         }
         return ticketList;
     }
