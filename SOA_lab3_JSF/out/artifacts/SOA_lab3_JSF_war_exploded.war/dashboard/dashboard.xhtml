@@ -83,6 +83,7 @@ Your role is: #{parkingSpaces.role}
         <f:selectItem itemValue="#{null}" itemLabel="--select punished space--" />
         <f:selectItems value="#{parkingSpaces.spacesList}" var="space" />
     </h:selectOneMenu>
+    <h:inputText value="#{correction.punishedPlate}" />
     <h:commandButton value="Change state to PUNISHED"
                      type="submit" action="#{correction.punish()}" />
 </h:form>

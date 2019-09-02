@@ -85,4 +85,13 @@ public class EventHandler {
         space.setParkingSpaceState(state);
         parkingSpaceDao.update(space);
     }
+
+    public static void changeParkingSpaceStatus(int id){
+        ParkingSpace space = parkingSpaceDao.get(id);
+        boolean state = space.getParkingSpaceState() == ParkingSpaceState.FREE;
+        if(state)
+            handleCarArriveEvent(id);
+        else
+            handleCarLeavingEvent(id);
+    }
 }

@@ -56,7 +56,7 @@ public class PasswordBean {
 
 
     public void changePassword(){
-        if(!newPassword.equals(repeatedPassword))
+        if(!newPassword.equals(repeatedPassword) || newPassword.isEmpty())
             return;//tutaj jakis komentarz moze dac
         if (userPassChange.equals(user.getLogin()) || user.getEmployeeRole().equals("ADMIN")) {
             try {

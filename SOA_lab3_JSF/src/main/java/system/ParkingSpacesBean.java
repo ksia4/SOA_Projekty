@@ -43,7 +43,12 @@ public class ParkingSpacesBean {
         }
     }
 
+    private void clearUnusedPayments(){
+        //tutaj bedzie usuwanie starych ticketow
+    }
+
     public List<ParkingSpace> getAll(){
+
         if("PARKING_CONTROLLER".equals(employee.getEmployeeRole()))
             return parkingSpaceDao.getSpacesByUser(employee.getEmployeeId());
         else

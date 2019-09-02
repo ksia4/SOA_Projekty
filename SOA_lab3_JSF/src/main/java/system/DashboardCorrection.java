@@ -32,6 +32,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,8 +48,11 @@ public class DashboardCorrection {
     private String spaceId;
     private String ticketId;
     private String spaceToPunishId;
+    private String punishedPlate;
 
     public void correct() throws IOException {
+        if(spaceId == null || ticketId == null)
+            return;
         ParkingSpace space1 = parkingSpaceDao.get(Integer.parseInt(spaceId));
         RegisteredPayment payment2 = space1.getPayment();
         String splitTicket[] = ticketId.split(" ");
@@ -58,9 +62,12 @@ public class DashboardCorrection {
         space1.setPayment(payment1);
         payment1.setParkingSpace(space1);
 
+        checkSpaceForCorrectState(space1);
+
         if(space2 != null) {
             space2.setPayment(payment2);
             payment2.setParkingSpace(space2);
+            checkSpaceForCorrectState(space2);
         } else{
             payment2.setParkingSpace(null);
         }
@@ -71,13 +78,32 @@ public class DashboardCorrection {
         registeredPaymentDao.save(payment2);
         ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
         ec.redirect("dashboard.xhtml");
+    }
 
+    private void checkSpaceForCorrectState(ParkingSpace space){
+        LocalDateTime now = LocalDateTime.now();
+        if(now.isBefore(space.getPayment().getEndTime())) {
+            if(space.getPayment().getPlate() != null)
+                space.setParkingSpaceState(ParkingSpaceState.PAID);
+            else
+                space.setParkingSpaceState(ParkingSpaceState.WAITING_FOR_PAYMENT);
+        } else {
+            space.setParkingSpaceState(ParkingSpaceState.UNPAID);
+        }
     }
 
     public void punish() throws IOException {
+        if(spaceToPunishId == null)
+            return;
         ParkingSpace space = parkingSpaceDao.get(Integer.parseInt(spaceToPunishId));
+        RegisteredPayment payment = space.getPayment();
         space.setParkingSpaceState(ParkingSpaceState.PUNISHED);
         parkingSpaceDao.update(space);
+        if(payment.getPlate() == null){
+            payment.setPlate(punishedPlate);
+            registeredPaymentDao.update(payment);
+        }
+
         ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
         ec.redirect("dashboard.xhtml");
     }
@@ -104,5 +130,13 @@ public class DashboardCorrection {
 
     public void setSpaceToPunishId(String spaceToPunishId) {
         this.spaceToPunishId = spaceToPunishId;
+    }
+
+    public String getPunishedPlate() {
+        return punishedPlate;
+    }
+
+    public void setPunishedPlate(String punishedPlate) {
+        this.punishedPlate = punishedPlate;
     }
 }

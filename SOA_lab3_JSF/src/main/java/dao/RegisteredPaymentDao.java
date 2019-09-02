@@ -29,7 +29,7 @@ public class RegisteredPaymentDao extends AbstractDao<RegisteredPayment> {
     }
 
     public List<RegisteredPayment> getTicketsToCorrection(int parkingId){
-        String jpql = "select p from RegisteredPayment p where p.parkingSpace.parking.id = :pid";
+        String jpql = "select p from RegisteredPayment p where p.parking.parkingId = :pid";
         List<RegisteredPayment> result = em.createQuery(jpql,RegisteredPayment.class)
                 .setParameter("pid", parkingId)
                 .getResultList();

@@ -7,5 +7,5 @@ import javax.jws.WebService;
 public interface ParkingSpaceService {
 
     @WebMethod
-    String changeParkingSpaceState(int id, boolean state);
+    String changeParkingSpaceState(int id/*, boolean state*/);
 }
