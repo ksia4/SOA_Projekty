@@ -7,23 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad022827-8562-4864-a0e2-fe92c7f9d056" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/system/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/system/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ParkingSpaceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ParkingSpaceDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/RegisteredPaymentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/RegisteredPaymentDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/system/DashboardCorrection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/system/DashboardCorrection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/system/ParkingSpacesBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/system/ParkingSpacesBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/system/PasswordBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/system/PasswordBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/system/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/system/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/dashboard/dashboard.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/dashboard/dashboard.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Przegrana.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Wygrana.xhtml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../soalab6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soalab6/out/artifacts/soalab5_war/soalab5_war.war" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/out/artifacts/soalab5_war/soalab5_war.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soalab6/src/main/java/events/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/src/main/java/events/EventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soalab6/src/main/java/webservice/client/ParkingSpaceServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/src/main/java/webservice/client/ParkingSpaceServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soalab6/src/main/java/webservice/client/ParkomatServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/src/main/java/webservice/client/ParkomatServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soalab6/src/main/java/webservice/parking/ParkingSpaceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/src/main/java/webservice/parking/ParkingSpaceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soalab6/src/main/java/webservice/parking/ParkingSpaceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/src/main/java/webservice/parking/ParkingSpaceServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soalab6/target/classes/webservice/client/ParkingSpaceServiceClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/target/classes/webservice/client/ParkingSpaceServiceClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soalab6/target/classes/webservice/client/ParkomatServiceClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soalab6/target/classes/webservice/client/ParkomatServiceClient.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -90,10 +82,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="das://8e2dd5e5-810e-4cfb-a999-cb0f381fb77f/database/postgres/schema/public/table/parking_spaces">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/external/ParkingRest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,7 +105,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/system/Notification.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
+            <state relative-caret-position="840">
               <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -110,23 +114,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/system/PasswordBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-864">
+              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/dashboard/dashboard.xhtml">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
+          <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="115" column="87" lean-forward="true" selection-start-line="115" selection-start-column="87" selection-end-line="115" selection-end-column="87" />
+            <state relative-caret-position="120">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -134,8 +136,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/system/ParkingSpacesBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-584">
-              <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+            <state relative-caret-position="216">
+              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/system/Login.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/external/ParkingServiceRest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/external/ParkingService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,64 +172,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/AbstractDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-264">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://8e2dd5e5-810e-4cfb-a999-cb0f381fb77f/database/postgres/schema/public/table/employees">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/RegisteredPaymentDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="31" column="82" selection-start-line="31" selection-start-column="82" selection-end-line="31" selection-end-column="82" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://8e2dd5e5-810e-4cfb-a999-cb0f381fb77f/database/postgres/schema/public/table/payments">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/system/DashboardCorrection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="96" column="19" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="19" />
+            <state relative-caret-position="48">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4046#4047#0" expanded="true" />
                 <element signature="e#4084#4085#0" expanded="true" />
-                <element signature="e#3529#3530#0" expanded="true" />
-                <element signature="e#3564#3565#0" expanded="true" />
+                <element signature="e#4200#4201#0" expanded="true" />
                 <element signature="e#4240#4241#0" expanded="true" />
-                <element signature="e#3686#3687#0" expanded="true" />
-                <element signature="e#3722#3723#0" expanded="true" />
+                <element signature="e#4352#4353#0" expanded="true" />
                 <element signature="e#4390#4391#0" expanded="true" />
+                <element signature="e#4452#4453#0" expanded="true" />
                 <element signature="e#4506#4507#0" expanded="true" />
-                <element signature="e#4220#4221#0" expanded="true" />
-                <element signature="e#4256#4257#0" expanded="true" />
-                <element signature="e#4314#4315#0" expanded="true" />
-                <element signature="e#4364#4365#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -245,10 +231,8 @@
         <option value="$PROJECT_DIR$/src/main/java/dashboard/Notification.java" />
         <option value="$PROJECT_DIR$/src/main/java/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/enums/EmployeeRole.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" />
         <option value="$PROJECT_DIR$/web/dupa.jsp" />
         <option value="$PROJECT_DIR$/web/index.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/ParkingSpaceDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/system/Notification.java" />
         <option value="$PROJECT_DIR$/src/main/java/parking/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/java/parking/Parking.java" />
@@ -260,11 +244,13 @@
         <option value="$PROJECT_DIR$/src/main/java/external/ParkingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/external/ParkingServiceRest.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/web/dashboard/dashboard.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/ParkingSpaceDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/RegisteredPaymentDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/system/ParkingSpacesBean.java" />
-        <option value="$PROJECT_DIR$/web/dashboard/dashboard.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/system/DashboardCorrection.java" />
         <option value="$PROJECT_DIR$/src/main/java/system/PasswordBean.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/system/DashboardCorrection.java" />
       </list>
     </option>
   </component>
@@ -402,7 +388,7 @@
     <property name="DefaultHtmlFileTemplate" value="XHTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567457711430" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567458707545" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -596,12 +582,12 @@
       <workItem from="1567329012384" duration="1389000" />
       <workItem from="1567335348737" duration="26259000" />
       <workItem from="1567434306252" duration="2259000" />
-      <workItem from="1567447825395" duration="4974000" />
+      <workItem from="1567447825395" duration="5599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162487000" />
+    <option name="totallyTimeSpent" value="163112000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -679,39 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/enums/EmployeeRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/EmployeeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/enums/ParkingSpaceState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/dupa.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -735,13 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ParkingDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" selection-start-line="17" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -753,13 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ParkingSpaceDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>
@@ -802,47 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1032">
-          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/system/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/external/ParkingRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/external/ParkingServiceRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/external/ParkingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://8e2dd5e5-810e-4cfb-a999-cb0f381fb77f/database/postgres/schema/public/table/parkings">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -857,47 +755,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/RegisteredPaymentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="31" column="82" selection-start-line="31" selection-start-column="82" selection-end-line="31" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/AbstractDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/system/Notification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://8e2dd5e5-810e-4cfb-a999-cb0f381fb77f/database/postgres/schema/public/table/payments">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/system/ParkingSpacesBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-584">
-          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -908,28 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/system/DashboardCorrection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="96" column="19" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4084#4085#0" expanded="true" />
-            <element signature="e#3529#3530#0" expanded="true" />
-            <element signature="e#3564#3565#0" expanded="true" />
-            <element signature="e#4240#4241#0" expanded="true" />
-            <element signature="e#3686#3687#0" expanded="true" />
-            <element signature="e#3722#3723#0" expanded="true" />
-            <element signature="e#4390#4391#0" expanded="true" />
-            <element signature="e#4506#4507#0" expanded="true" />
-            <element signature="e#4220#4221#0" expanded="true" />
-            <element signature="e#4256#4257#0" expanded="true" />
-            <element signature="e#4314#4315#0" expanded="true" />
-            <element signature="e#4364#4365#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/dashboard/dashboard.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
@@ -937,12 +776,149 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/system/PasswordBean.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/AbstractDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-356">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/EmployeeDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ParkingDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ParkingSpaceDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/RegisteredPaymentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/enums/EmployeeRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/enums/ParkingSpaceState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/external/ParkingRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/external/ParkingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/external/ParkingServiceRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/system/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/system/Notification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/system/ParkingSpacesBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/system/PasswordBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-864">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/system/DashboardCorrection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4046#4047#0" expanded="true" />
+            <element signature="e#4084#4085#0" expanded="true" />
+            <element signature="e#4200#4201#0" expanded="true" />
+            <element signature="e#4240#4241#0" expanded="true" />
+            <element signature="e#4352#4353#0" expanded="true" />
+            <element signature="e#4390#4391#0" expanded="true" />
+            <element signature="e#4452#4453#0" expanded="true" />
+            <element signature="e#4506#4507#0" expanded="true" />
           </folding>
         </state>
       </provider>

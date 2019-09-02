@@ -8,21 +8,14 @@
   <component name="ChangeListManager">
     <list default="true" id="3f23a9e7-d280-44e3-bee6-21adfc4fabab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../SOA_lab3_JSF/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SOA_lab3_JSF/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SOA_lab3_JSF/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/system/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SOA_lab3_JSF/out/artifacts/SOA_lab3_JSF_war_exploded.war/WEB-INF/classes/system/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SOA_lab3_JSF/src/main/java/dao/ParkingSpaceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SOA_lab3_JSF/src/main/java/dao/ParkingSpaceDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SOA_lab3_JSF/src/main/java/dao/RegisteredPaymentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SOA_lab3_JSF/src/main/java/dao/RegisteredPaymentDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SOA_lab3_JSF/src/main/java/system/DashboardCorrection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SOA_lab3_JSF/src/main/java/system/DashboardCorrection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SOA_lab3_JSF/src/main/java/system/ParkingSpacesBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SOA_lab3_JSF/src/main/java/system/ParkingSpacesBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SOA_lab3_JSF/src/main/java/system/PasswordBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SOA_lab3_JSF/src/main/java/system/PasswordBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SOA_lab3_JSF/target/classes/system/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SOA_lab3_JSF/target/classes/system/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SOA_lab3_JSF/web/dashboard/dashboard.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../SOA_lab3_JSF/web/dashboard/dashboard.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/events/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/EventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webservice/client/ParkingSpaceServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webservice/client/ParkingSpaceServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webservice/client/ParkomatServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webservice/client/ParkomatServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webservice/parking/ParkingSpaceServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webservice/client/ParkingSpaceServiceClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webservice/client/ParkingSpaceServiceClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webservice/client/ParkomatServiceClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webservice/client/ParkomatServiceClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SOA_lab3_JSF/web/Przegrana.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SOA_lab3_JSF/web/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SOA_lab3_JSF/web/WEB-INF/faces-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SOA_lab3_JSF/web/Wygrana.xhtml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -392,7 +385,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567457711394" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567458707458" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$USER_HOME$/Pobrane/slf4j-1.7.28/slf4j-api-1.7.28-sources.jar!/" />

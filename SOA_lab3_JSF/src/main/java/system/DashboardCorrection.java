@@ -1,50 +1,27 @@
 package system;
 
-
-
-import com.sun.xml.internal.messaging.saaj.util.Base64;
-import dao.EmployeeDao;
 import dao.ParkingSpaceDao;
 import dao.RegisteredPaymentDao;
 import enums.ParkingSpaceState;
 import org.jboss.ejb3.annotation.SecurityDomain;
-import parking.Employee;
 import parking.ParkingSpace;
 import parking.RegisteredPayment;
 
 import javax.annotation.security.DeclareRoles;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
-import javax.faces.bean.SessionScoped;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.TypedQuery;
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import javax.servlet.http.HttpSessionEvent;
-import javax.validation.constraints.Null;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
 
 @ManagedBean(name = "correction", eager = true)
 @RequestScoped
 @SecurityDomain("moje_jndi")
 @DeclareRoles({"ADMIN","PARKING_CONTROLLER"})
 public class DashboardCorrection {
-    private EmployeeDao employeeDao = new EmployeeDao();
     private ParkingSpaceDao parkingSpaceDao = new ParkingSpaceDao();
     private RegisteredPaymentDao registeredPaymentDao = new RegisteredPaymentDao();
-    private Employee user;
     private String spaceId;
     private String ticketId;
     private String spaceToPunishId;
@@ -99,7 +76,7 @@ public class DashboardCorrection {
         RegisteredPayment payment = space.getPayment();
         space.setParkingSpaceState(ParkingSpaceState.PUNISHED);
         parkingSpaceDao.update(space);
-        if(payment.getPlate() == null){
+        if(payment.getPlate() == null || payment.getPlate().isEmpty()){
             payment.setPlate(punishedPlate);
             registeredPaymentDao.update(payment);
         }

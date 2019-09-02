@@ -1,10 +1,7 @@
 package dao;
 
-import parking.Employee;
 import parking.ParkingSpace;
-
 import javax.persistence.Query;
-import javax.xml.registry.infomodel.User;
 import java.util.List;
 
 public class ParkingSpaceDao extends AbstractDao<ParkingSpace> {
@@ -23,17 +20,6 @@ public class ParkingSpaceDao extends AbstractDao<ParkingSpace> {
         Query query = em.createQuery("SELECT s FROM ParkingSpace s");
         return query.getResultList();
     }
-
-//    public void update(ParkingSpace s){
-//        try{
-//            em.getTransaction().begin();
-//            em.merge(s);
-//            em.getTransaction().commit();
-//        }
-//        catch (Exception e){
-//            System.err.println("Error in ParkingSpaceDao->changeState()" + e);
-//        }
-//    }
 
     public List<ParkingSpace> getAllSpacesToPaid(int parkingId){
         String jpql = "select ps from ParkingSpace ps, Parking p where p.parkingId = :pid " +

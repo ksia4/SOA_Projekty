@@ -1,8 +1,5 @@
 package system;
 
-
-
-import com.sun.xml.internal.messaging.saaj.util.Base64;
 import dao.EmployeeDao;
 import org.jboss.ejb3.annotation.SecurityDomain;
 import parking.Employee;
@@ -11,10 +8,6 @@ import javax.annotation.security.DeclareRoles;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.TypedQuery;
 import javax.servlet.http.HttpServletRequest;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
@@ -60,7 +53,6 @@ public class PasswordBean {
             return;//tutaj jakis komentarz moze dac
         if (userPassChange.equals(user.getLogin()) || user.getEmployeeRole().equals("ADMIN")) {
             try {
-                String password = "haslo";
 
                 MessageDigest md = MessageDigest.getInstance("MD5");
 
@@ -85,7 +77,6 @@ public class PasswordBean {
         newPassword = null;
     }
 
-    //zmienic nazewnictwo bo oczy bolo
     public String getNewPassword() {
         return newPassword;
     }

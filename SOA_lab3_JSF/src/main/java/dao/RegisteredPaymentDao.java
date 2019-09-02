@@ -35,15 +35,4 @@ public class RegisteredPaymentDao extends AbstractDao<RegisteredPayment> {
                 .getResultList();
         return result;
     }
-
-//    public void update(RegisteredPayment p){
-//        try{
-//            em.getTransaction().begin();
-//            em.merge(p);
-//            em.getTransaction().commit();
-//        }
-//        catch (Exception e){
-//            System.err.println("Error in ParkingSpaceDao->changeState()" + e);
-//        }
-//    }
 }
